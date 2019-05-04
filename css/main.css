@@ -2,14 +2,14 @@
 /* You may use #HEX or color names */
 
 /* * is a wildcard referring to all elements. */
-@import url('https://fonts.googleapis.com/css?family=BioRhyme+Expanded')
+
 *  { margin: 0; box-sizing: border-box; }
 
 body {
     font-size: 16px;
     line-height: 32px;
     font-family: 'BioRhyme Expanded', serif;
-    color: /* #xxxxxx */;
+    color: rgba(27, 66, 105, 1);
 }
 
 h1 {
