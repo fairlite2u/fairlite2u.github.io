@@ -11,7 +11,7 @@ body {
 
 h1 {
     font-size: 36px;
-    color: rgb(113, 155, 197);
+    color: rgb(184, 203, 223);
 }
 
 h2 {
@@ -29,7 +29,7 @@ header, main, footer {
 header, footer, footer a {
     text-align: center;
     background-color: rgb(105, 105, 112);
-    color: rgb(113, 155, 197);
+    color: rgb(184, 203, 223);
 }
 
 header img {
