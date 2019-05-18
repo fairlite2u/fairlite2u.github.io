@@ -1,0 +1,19 @@
+/* main css custom file */
+body {
+    font-size: 16px;
+    background-color: rgb(146, 197, 245) ;
+}
+
+header {
+	margin: 10px auto;
+	background-color: rgb(51, 70, 240);
+	border: 1px solid rgb(2, 19, 75);
+	box-shadow: 0 0 30px #777;
+	text-align: center;
+}
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
