@@ -26,6 +26,11 @@
     .forecast h3 {
         padding: 15px;
     }
+    .hero img {
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
     /*****Article*****/
     .main-article {
         display: inline-block;
