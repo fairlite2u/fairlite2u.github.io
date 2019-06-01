@@ -37,7 +37,9 @@
         <h2>Preston, Idaho</h2>
         <div class="hero">
             <picture>
-                <img src="images/hero-large" alt="Power lines landscape" sizes="100vw" srcset="images/hero-small.jpg 450w, images/hero-large.jpg 900w">
+                <source media="(max-width: 499px)" srcset="images/hero-small.jpg">
+                <source media="(min-width: 500px)" srcset="images/hero-large.jpg">
+                <img src="images/hero-large.jpg" alt="Power lines landscape">
             </picture>
             <section class="summary">
                 <h3>Weather Summary</h3>
