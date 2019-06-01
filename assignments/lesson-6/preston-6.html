@@ -7,7 +7,6 @@
     <title>The Weather Watcher | Preston, ID | Soda Springs, ID | Fish Haven, ID</title>
     <meta name="description"
         content="The primary weather resource serving the Idaho towns of Preston, Soda Springs, and Fish Haven">
-
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
@@ -37,7 +36,9 @@
     <main>
         <h2>Preston, Idaho</h2>
         <div class="hero">
-            <img src="images/townlandscape.jpg" alt="Aerial Town View">
+            <picture>
+                <img src="images/hero-large" alt="Power lines landscape" sizes="100vw" srcset="images/hero-small.jpg 450w, images/hero-large.jpg 900w">
+            </picture>
             <section class="summary">
                 <h3>Weather Summary</h3>
                 <div class="stats">
@@ -129,9 +130,10 @@
 
     <footer>
         <p>&copy;2019 The Weather Watcher | Attributions | Jennifer Thomas<br>
-            <span id="currentdate">Monday, 27 May 2019</span>
+            <span id="currentdate"><script src="js/currentdate.js"></script></span>
         </p>
     </footer>
+
 </body>
 
 </html>

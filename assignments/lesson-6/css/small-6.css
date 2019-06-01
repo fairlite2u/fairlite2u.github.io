@@ -46,6 +46,7 @@ nav a {
     display: block;
     color: #0b4871;
     text-decoration: none;
+    font-weight: bold;
 }
 .v {
     display: block;
@@ -60,7 +61,7 @@ nav a:hover {
 }
 /*****Main Content*****/
 main {
-    max-width: 820px;
+    max-width: 900px;
     margin: 0 auto;
 }
 /*****Top Image and Weather Summary*****/
@@ -71,21 +72,24 @@ h2 {
     padding: 1.5rem;
 }
 .hero {
-    margin: 10px auto;
+    margin: 5px auto;
     position: relative;
     color: #f5f5f5;
-    width: 820px;
-    height: 300px;
 }
 .summary {
     position: absolute;
     top: 25px;
-    left: 50px;
+    left: 25px;
     background:#0b4871;
     border: 1px solid #07304b;
     padding: 1.5rem;
     box-shadow: 0 0 30px #ffd3cd;
-    opacity: .7;
+    opacity: .8;
+    line-height: 1.4rem;
+}
+.summary h3 {
+    padding-bottom: 5px;
+    text-decoration: underline;
 }
 .hero img {
     width: 100%;
@@ -153,7 +157,7 @@ h2 {
 
 /*****Contact*****/
 .contact {
-    max-width: 820px;
+    max-width: 900px;
     margin: 10px auto;
     padding: 10px;
     background-color: #a3e1f8;
@@ -170,7 +174,7 @@ h2 {
 }
 /*****Footer*****/
 footer {
-    max-width: 820px;
+    max-width: 900px;
     margin: 10px auto;
     background-color: #0b4871;
     color: #f5f5f5;
