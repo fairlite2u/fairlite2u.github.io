@@ -62,6 +62,9 @@ nav a:hover {
     background: #fff3cd;
     color: #07304b;
 }
+.responsive li {
+    display: block;
+}
 /*****Main Content*****/
 main {
     max-width: 900px;
