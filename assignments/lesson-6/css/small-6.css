@@ -48,8 +48,11 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
-.v {
+.navigation li:first-child {
     display: block;
+}
+.navigation li {
+    display: none;
 }
 .active {
     background: #0e6096;
@@ -82,7 +85,7 @@ h2 {
     left: 25px;
     background:#0b4871;
     border: 1px solid #07304b;
-    padding: 1.5rem;
+    padding: .7rem;
     box-shadow: 0 0 30px #ffd3cd;
     opacity: .8;
     line-height: 1.4rem;
@@ -128,7 +131,7 @@ h2 {
     border-bottom: 1px solid #07304b;
     background-color: #fff3cd;
 }   
-.flex div img {
+.forecast-block div img {
     border-radius: 100px;
     padding: 5px;
 }    
@@ -157,7 +160,7 @@ h2 {
 
 /*****Contact*****/
 .contact {
-    max-width: 900px;
+    max-width: 880px;
     margin: 10px auto;
     padding: 10px;
     background-color: #a3e1f8;
