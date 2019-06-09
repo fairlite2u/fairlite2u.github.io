@@ -59,4 +59,8 @@
         margin: 20px auto;
         font-size: 1em;
     }
+    /*****Gallery*****/
+    .imagegallery {
+    grid-template-columns: 1fr 1fr;
+    }
 }

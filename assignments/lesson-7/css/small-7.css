@@ -81,6 +81,7 @@ h2 {
     font-size: 2rem;
     text-shadow: 3px 3px 5px #0e6096;
     padding: 1.5rem;
+    text-align: center;
 }
 .hero {
     margin: 5px auto;
@@ -202,3 +203,19 @@ footer {
     text-align: center;
     font-size: .7em;
 } 
+/*****Gallery*****/
+.imagegallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+    padding: 10px;
+    grid-auto-rows: 300px;
+}
+.imagegallery img {
+    width: 100%;
+    height: auto;
+}
+figure {
+    border: 1 px solid #0e6096;
+    padding: 20px;
+}
