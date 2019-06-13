@@ -11,7 +11,7 @@ div {
   }
   
   th, td {
-      border: 2px solid grey;
+      border: 2px solid lightgrey;
       padding: 10px 0;
   }
   thead, tfoot{
