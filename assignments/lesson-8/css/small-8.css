@@ -218,3 +218,65 @@ footer {
 figure {
     padding: 20px;
 }
+
+
+/*****Storm Center*****/
+.stormhead, .stormsubhead {
+    text-align: left;
+    padding: 20px 0;
+    margin: 0 20px;
+}
+
+.stormsubhead {
+    padding: 2px 0;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 3px solid #fff3cd;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    max-width: 360px;
+}
+
+form legend {
+    color: #0b4871;
+}
+
+.userinfo, .priority, .storminfo, .slider {
+    display: block;
+    padding-top: 1.2rem;
+    color: #0b4871;
+}
+form label.userinfo input, form label.userinfo select, form label.storminfo input, form label.storminfo select {
+    -webkit-appearance: none;
+    display: block;
+    border: solid 2px #a3e1f8;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #07304b;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #fff3cd
+}
+
+
+form input#submitbutton {
+    border: none;
+    background-color: #0b4871;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 100%;
+    max-width: 240px;
+}
+
+form label.userinfo input:required {
+    border: #0e6096 dashed 3px;
+}
+
+form label.userinfo input:required:valid {
+    border: #0b4871 solid 3px;
+}
+

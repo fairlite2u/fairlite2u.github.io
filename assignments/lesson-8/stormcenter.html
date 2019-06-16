@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/small-7.css" rel="stylesheet">
-    <link href="css/medium-7.css" rel="stylesheet">
-    <link href="css/large-7.css" rel="stylesheet">
+    <link href="css/small-8.css" rel="stylesheet">
+    <link href="css/medium-8.css" rel="stylesheet">
+    <link href="css/large-8.css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,17 +27,62 @@
         <ul class="navigation">
             <li><a href="#" class="menu" onclick="toggleMenu()">&equiv; Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li><a href="preston-8.html" class="active">Preston</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>
+            <li><a href="stormcenter.html" class="active">Storm Center</a></li>
             <li><a href="gallery-8.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
-        <h2>Storm Center</h2>
-        <form method="POST" action="thanks.html">
-            <input type="submit" value="Sumbit Storm Reporting">
+        <h2 class="stormhead">Storm Center</h2>
+        <h3 class="stormsubhead">Would you like to report severe weather conditions?</h3><br>
+        <h3 class="stormsubhead">Fill out the form below:</h3>
+        <h6 class="stormsubhead"><em>items marked with a * are required</em></h6>
+        <form method="GET" action="thanks.html" name="stormreport">
+            <fieldset>
+                <legend>Eye Witness Information</legend>
+                <label class="userinfo">Full Name* <input type="text" name="fullname" required pattern="[A-Za-z]{5, }""></label>
+                <label class="userinfo">Email Address <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="report@theweatherwatcher.com"</label>
+                <label class="userinfo">Phone Number* <input type="tel" name="phone" required placeholder="1235556789"</label>
+                <label class="userinfo">Zip Code* <input type="number" name="zip" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="storminfo">Storm Date <input type="date"> </label>
+                <label class="storminfo">Storm Type <input list="types" name="stormtype">
+                    <datalist id="types">
+                        <option value="Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
+                <label class="slider">Storm Severity (1 to 10)                     
+                    <span id="ratingvalue">5</span>
+                    <input type="range" id="scale" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                </label>
+                <label class="storminfo">Storm Region
+                    <select name="region">
+                        <option value="" selected disabled>Select Region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sugarcity">Sugar City</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Are You In Danger?</legend>
+                <label class="priority"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="priority"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                <label class="priority"><input type="radio" name="danger" value="no"> No</label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information: </legend>
+                <textarea id="addinfo" cols="40" rows="5"></textarea>
+            </fieldset>
+            <input type="submit" id="submitbutton" value="Send Your Report">
         </form>
 
 
@@ -82,6 +127,7 @@
     </footer>
     <script src="js/hamburger.js"></script>
     <script src="js/windchill.js"></script>
+    <script src="js/rating.js"></script>
 </body>
 
 </html>
