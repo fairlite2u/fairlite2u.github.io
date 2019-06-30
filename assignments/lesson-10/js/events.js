@@ -5,32 +5,26 @@ request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-    let towndata = request.response;
+    let towndata = request.response; 
     let towns = towndata['towns'];
+    let output = document.querySelector('.eventbox');
 
-    let output = document.querySelector('.eventlist');
-
-    towns.forEach(town => {
-        if (town.name == "Preston" || town.name == "Soda Springs" || town.name == "Fish Haven") {
-            let list = document.createElement('li');
-
-            list.textContent = town.events;
-
-            output.appendChild(list);
-        };
-        
-    });
-    for (var i = 0; i < events.length; i++) {
-        var myList = document.createElement('li');
-
-        var townevents = town[i].events;
-        for (var j = 0; j < events.length; j++) {
-            var listItem = document.createElement('li');
-            listItem.textContent = superPowers[j];
-            myList.appendChild(listItem);
+    for (let i = 0; i < towns.length; i++) {
+        if (towns[i].name == "Preston") {
+            let townevents = towns[i].events;
+            let numevents = 0; 
+            
+            for (let e = 0; e < townevents.length; e++) {
+                let event = townevents[numevents];
+                numevents++;                 
+                
+                let list = document.createElement('ul');
+                let listItem = document.createElement('li');
+                listItem.textContent = event;
+                list.appendChild(listItem);
+                output.appendChild(list);
+            }
         }
 
-        myArticle.appendChild(myList);
-
-    }
+    };
 }
