@@ -1,4 +1,5 @@
 /* main css custom file */
+
 *{
     margin: 0;
     padding: 0;
@@ -20,6 +21,7 @@ header, nav, footer {
 }
 
 /******Header******/
+
 header {
 	margin: 10px auto;
     background-color: #0b4871;
@@ -40,7 +42,9 @@ header img {
     font-size:  .70em;
     margin: 15px;
 }
+
 /******Navigation******/
+
 nav {
     background-color: #a3e1f8;
     text-align: center;
@@ -72,12 +76,16 @@ nav a:hover {
 .responsive li {
     display: block;
 }
+
 /*****Main Content*****/
+
 main {
     max-width: 900px;
     margin: 0 auto;
 }
+
 /*****Top Image and Weather Summary*****/
+
 h2 {
     font-size: 2rem;
     text-shadow: 3px 3px 5px #0e6096;
@@ -116,7 +124,9 @@ h2 {
     width: 100%;
     height: auto;
 }
+
 /*****Forecast*****/
+
 .forecast {
     display: none;
 }
@@ -161,7 +171,9 @@ h2 {
     display: block;
     padding: 0 5px 5px;
 }
+
 /*****Article*****/
+
 .acc {
     padding: 5px;
 }
@@ -178,6 +190,7 @@ h2 {
 }
 
 /*****Contact*****/
+
 .contact {
     max-width: 880px;
     margin: 10px auto;
@@ -194,7 +207,9 @@ h2 {
 .map {
     width: 100%;
 }
+
 /*****Footer*****/
+
 footer {
     max-width: 900px;
     margin: 10px auto;
@@ -205,8 +220,6 @@ footer {
     text-align: center;
     font-size: .7em;
 } 
-
-
 footer a {
     color: #f5f5f5;
     text-decoration: none;
@@ -215,7 +228,9 @@ footer a:hover {
     background: #fff3cd;
     color: #07304b;
 }
+
 /*****Gallery*****/
+
 .imagegallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -231,8 +246,8 @@ figure {
     padding: 20px;
 }
 
-
 /*****Storm Center*****/
+
 .stormhead, .stormsubhead {
     text-align: left;
     padding: 20px 0;
@@ -272,7 +287,6 @@ form label.userinfo input, form label.userinfo select, form label.storminfo inpu
     background-color: #fff3cd
 }
 
-
 form input#submitbutton {
     border: none;
     background-color: #0b4871;
@@ -294,7 +308,6 @@ form label.userinfo input:required:valid {
 
 /*****Home Page******/
 
-
 .layout {
     display: grid;
     justify-content: center;
@@ -305,7 +318,6 @@ form label.userinfo input:required:valid {
 .townshome {
     grid-template-columns: 1fr;
 }
-
 
 .townshome h4 {
     font-style: italic;
@@ -327,6 +339,7 @@ form label.userinfo input:required:valid {
 }
 
 /*****Events*****/
+
 .events {
     margin: 0 auto;
     padding: 15px;
