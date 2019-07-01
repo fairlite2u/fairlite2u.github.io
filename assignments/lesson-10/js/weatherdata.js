@@ -8,11 +8,12 @@ weatherRequest.send();
 weatherRequest.onload = function() {
     let weatherData = JSON.parse(weatherRequest.responseText);
 
-    document.getElementById('currenttemp').innerHTML = weatherData.main.temp.toFixed(1);
+    document.getElementById('currenttemp').innerHTML = weatherData.weather[0].description;
     document.getElementById('hightemp').innerHTML = weatherData.main.temp_max.toFixed(1);
     document.getElementById('windchill').innerHTML = windChill(weatherData.main.temp_max, weatherData.wind.speed).toFixed(1);
     document.getElementById('humidity').innerHTML= weatherData.main.humidity.toFixed(0);
     document.getElementById('windspeed').innerHTML = weatherData.wind.speed.toFixed(1);
+    console.log(weatherData);
 }
 
 /*****Forecast*****/
