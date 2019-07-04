@@ -8,7 +8,7 @@ request.onload = function() {
     let towndata = request.response;
     let towns = towndata['towns'];
 
-    let output = document.querySelector('section');
+    let output = document.querySelector('.townshome');
 
     towns.forEach(town => {
         if (town.name == "Preston" || town.name == "Soda Springs" || town.name == "Fish Haven") {

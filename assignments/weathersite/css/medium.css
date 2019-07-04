@@ -63,6 +63,16 @@
     .imagegallery {
     grid-template-columns: 1fr 1fr;
     }
-
-
+    /*****Main Page*****/
+    .townshome {
+        display: grid;
+        max-width: 900px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(5, 0.2fr) 1fr ;
+        grid-column-gap: 3em;
+    }
+    .townshome h4 {
+        font-size: x-small;
+    }
 }
