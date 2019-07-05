@@ -334,6 +334,7 @@ form label.userinfo input:required:valid {
     margin: 20px 0 auto;
     text-align: center;
     font-weight: bold;
+    font-size: larger;
 }
 .layout h3 {
     text-align: center;
