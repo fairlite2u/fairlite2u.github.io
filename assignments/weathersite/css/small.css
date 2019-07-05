@@ -332,6 +332,8 @@ form label.userinfo input:required:valid {
 /*****Home Page******/
 #homehead {
     margin: 20px 0 auto;
+    text-align: center;
+    font-weight: bold;
 }
 .layout h3 {
     text-align: center;
