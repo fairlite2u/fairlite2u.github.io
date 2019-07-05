@@ -250,14 +250,28 @@ figure {
 
 /*****Storm Center*****/
 
-.stormhead, .stormsubhead {
+.stormbox {
+    margin: 0 auto;
+    width: 480px;
+}
+
+.stormhead {
     text-align: left;
     padding: 20px 0;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 .stormsubhead {
+    text-align: left;
     padding: 2px 0;
+    margin: 0 15px;
+}
+#subrequired {
+    font-weight: bold;
+    font-size: smaller;
+}
+form {
+    display: block;
 }
 
 form fieldset {
@@ -271,13 +285,19 @@ form fieldset {
 
 form legend {
     color: #0b4871;
+    font-weight: bold;
 }
 
-.userinfo, .priority, .storminfo, .slider {
+.userinfo, .priority, .storminfo, .slider, #scale {
     display: block;
     padding-top: 1.2rem;
     color: #0b4871;
+    width: 100%;
 }
+#scale {
+    width: 96%;
+}
+
 form label.userinfo input, form label.userinfo select, form label.storminfo input, form label.storminfo select {
     -webkit-appearance: none;
     display: block;

@@ -17,7 +17,6 @@ weatherRequest.onload = function() {
     document.getElementById('windchill').innerHTML = windChill(weatherData.main.temp_max, weatherData.wind.speed).toFixed(1);
     document.getElementById('humidity').innerHTML= weatherData.main.humidity.toFixed(0);
     document.getElementById('windspeed').innerHTML = weatherData.wind.speed.toFixed(1);
-    console.log(weatherData);
 }
 
 /*****Forecast*****/
