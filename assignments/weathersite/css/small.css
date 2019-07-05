@@ -330,11 +330,27 @@ form label.userinfo input:required:valid {
 }
 
 /*****Home Page******/
-#homehead {
-    margin: 20px 0 auto;
+#homehead, #homesub{
     text-align: center;
+}
+#homehead {
+    margin: 20px 0 10px;
     font-weight: bold;
     font-size: larger;
+}
+#breakinghead {
+    padding: 1.5rem 0 0;
+}
+#breakingtitle {
+    font-weight: bold;
+    font-size: large;
+}
+.breakingarticle {
+    margin: 20px auto 10px;
+    padding: 10px;
+    background-color: #a3e1f8;
+    border: 1px solid #0e6096;
+    line-height: 1.25rem;
 }
 .layout h3 {
     text-align: center;
