@@ -4,15 +4,15 @@ let apiURLstring1 = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&
 weatherRequest.open('Get', apiURLstring1, true);
 weatherRequest.send();
 function windChill(t,s) {
-    return  35.74 + (0.6215 * t) - (35.75 * (s**0.16)) + ((0.4275 * t) * (s**0.16))
+    return  parseFloat(35.74 + (0.6215 * t) - (35.75 * (s**0.16)) + ((0.4275 * t) * (s**0.16)));
 }
 weatherRequest.onload = function() {
     let weatherData = JSON.parse(weatherRequest.responseText);
     document.getElementById('currenttemp').innerHTML = weatherData.weather[0].description;
-    document.getElementById('hightemp').innerHTML = weatherData.main.temp_max.toFixed(1);
-    document.getElementById('windchill').innerHTML = windChill(weatherData.main.temp_max, weatherData.wind.speed).toFixed(1);
-    document.getElementById('humidity').innerHTML= weatherData.main.humidity.toFixed(0);
-    document.getElementById('windspeed').innerHTML = weatherData.wind.speed.toFixed(1);
+    document.getElementById('hightemp').innerHTML = weatherData.main.temp_max.toFixed();
+    document.getElementById('windchill').innerHTML = windChill(weatherData.main.temp_max, weatherData.wind.speed).toFixed();
+    document.getElementById('humidity').innerHTML= weatherData.main.humidity.toFixed();
+    document.getElementById('windspeed').innerHTML = weatherData.wind.speed.toFixed();
 }
 /*****Forecast*****/
 let weatherTemps = new XMLHttpRequest();
