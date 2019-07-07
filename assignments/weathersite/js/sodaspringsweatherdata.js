@@ -13,7 +13,6 @@ weatherRequest.onload = function() {
     document.getElementById('windchill').innerHTML = windChill(weatherData.main.temp_max, weatherData.wind.speed).toFixed();
     document.getElementById('humidity').innerHTML= weatherData.main.humidity.toFixed();
     document.getElementById('windspeed').innerHTML = weatherData.wind.speed.toFixed();
-    console.log(weatherData);
 }
 /*****Forecast*****/
 let weatherTemps = new XMLHttpRequest();
