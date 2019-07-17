@@ -1,4 +1,4 @@
-const requestFile = "js/temples.json"
+const requestURL = 'https://fairlite2u.github.io/templeinn/js/temples.json';
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
