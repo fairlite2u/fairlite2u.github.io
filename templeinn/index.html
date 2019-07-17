@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites | Temples | Reservations | Services</title>
+    <meta name="description" content="Providing lodging and services related to temple visits around the world">
+    <link href="<link href=" https://fonts.googleapis.com/css?family=Lato%7cTangerine:700&display=swap"
+        rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbox">
+                <span>
+                    <a href="./">
+                        <img src="images/logo.png" alt="Temple Inn & Suites Logo">
+                    </a>
+                </span>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#" class="menu" onclick="toggleMenu()">&equiv; Menu</a></li>
+                        <li><a href="./" class="active">Home</a></li>
+                        <li><a href="#">Temples</a></li>
+                        <li><a href="#">Reservations</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+    </header>
+
+    <main>
+        <div>
+            <div id="calltoaction">
+                <h2 id="cta">Planning a trip?</h2>
+                <p>Don't delay booking your reservation.</p>
+                <p>Rooms fill up fast during the summer travel season.</p>
+                <form method="GET" action="reservations.html" name="calltoaction">
+
+                    <input type="submit" name="buttonsubmit" id="submitbutton" value="Check Availability Now">
+                </form>
+            </div>
+        </div>
+        <section>
+            <h2 id="featuredhead">Featured Temple</h2>
+
+            <article class="featurearticle">
+                <picture>
+                    <img class="featureimg" src="images/saopaulowide.jpg" alt="Sao Paulo Brazil Temple">
+                </picture>
+                <h3 id="featuretitle">Sao Paulo Brazil Temple</h3>
+                <br>
+                <ul>
+                    <li>Dedicated on October 30, 1978 by Spencer W. Kimball</li>
+                    <li>First temple built in South America</li>
+                    <li>First temple to use the single story, single spire design</li>
+                    <li>The spire is 101 feet tall</li>
+                    <li>Has a total floor area of 59,246 square feet</li>
+                    <li>The angel Moroni statue was added in 2003 during a renovation</li>
+                    <li>Rededicated on February 22, 2004 by Gordon B. Hinckley</li>
+                </ul>
+            </article>
+        </section>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <picture class="sspic">
+                    <source media="(max-width: 32.5em)" srcset="images/freibergtemple.jpg">
+                    <source media="(max-width: 64em)" srcset="images/freibergmedium.jpg">
+                    <source media="(min-width: 64.01em)" srcset="images/freiberglarge.jpg">
+                    <img src="images/freibergtemple.jpg" alt="Frieberg Germany Temple photo">
+                </picture>
+                <div class="text">Freiberg Germany Temple</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <picture class="sspic">
+                    <source media="(max-width: 32.5em)" srcset="images/latemple.jpg">
+                    <source media="(max-width: 64em)" srcset="images/lamedium.jpg">
+                    <source media="(min-width: 64.01em)" srcset="images/lalarge.jpg">
+                    <img src="images/latemple.jpg" alt="Los Angeles California Temple photo">
+                </picture>
+                <div class="text">Los Angeles California Temple</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <picture class="sspic">
+                    <source media="(max-width: 32.5em)" srcset="images/mttimptemple.jpg">
+                    <source media="(max-width: 64em)" srcset="images/mttimpmedium.jpg">
+                    <source media="(min-width: 64.01em)" srcset="images/mttimplarge.jpg">
+                    <img src="images/mttimptemple.jpg" alt="Mount Timpanogos Utah Temple photo">
+                </picture>
+                <div class="text">Mount Timpanogos Utah Temple</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <picture class="sspic">
+                    <source media="(max-width: 32.5em)" srcset="images/washdctemple.jpg">
+                    <source media="(max-width: 64em)" srcset="images/washdcmedium.jpg">
+                    <source media="(min-width: 64.01em)" srcset="images/washdclarge.jpg">
+                    <img src="images/washdctemple.jpg" alt="Washington D.C. Temple photo">
+                </picture>
+                <div class="text">Washington D.C. Temple</div>
+            </div>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <div class="contact">
+            <section>
+                <div class="leftcol">
+                    <picture>
+                        <img class="map" src="images/idaho-map480.jpg" alt="Picture of Idaho map">
+                    </picture>
+                </div>
+                <div class="rightcol">
+                    <h4>Temple Inn & Suites</h4>
+                    <p>4800 Montgomery Ln #300</p>
+                    <p>Bethesda, MD 20814</p>
+                    <br>
+                    <p>&phone; &nbsp; 301.555.5555</p>
+                    <p>&#9993; &nbsp; info@templeinnandsuites.com</p>
+                    <br><br>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img class="icons" src="images/facebook-logo75.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.pinterest.com/" target="_blank">
+                            <img class="icons" src="images/pinterest-logo75.png" alt="Pinterest">
+                        </a>
+                        <a href="https://www.twitter.com/" target="_blank">
+                            <img class="icons" src="images/twitter-logo75.png" alt="Twitter">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;2019 Temple Inn & Suites | <a class="sources" href="sources.html">Attributions</a> | Designed by Aspie
+            Design<br>
+            <span id="currentdate">
+            </span>
+        </p>
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/currentdate.js"></script>
+</body>
+
+</html>

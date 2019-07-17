@@ -1,0 +1,62 @@
+@media only screen and (min-width: 32.5em) {
+    /*****header*****/
+    header img {
+        width: 150px;
+    }
+    h1 {
+        font-size: 2.6rem;
+    }
+    
+    /*****navigation******/
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li {
+        display: inline-block;
+        margin-right: .75rem;
+        list-style-type: none;
+    }
+    .navigation {
+        flex-direction: row;
+    }
+    /*****Main*****/
+    #featuretitle {
+        text-align: left;
+    }
+
+
+
+    .slideshow-container {
+        max-width: 600px;
+
+      }
+      .text {
+        width: 96%;
+      }
+
+    /*****Article*****/
+    .main-article {
+        display: inline-block;
+    }
+    .articleimg, .featureimg {
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 33%;
+        padding: 5px;
+    }
+    /*****Contact*****/
+    .map {
+        float: left;
+        width: 33%;
+        padding: 10px;
+    }
+
+    /*****Footer*****/
+        footer {
+        margin: 20px auto;
+        font-size: 1em;
+    }
+
+
+}

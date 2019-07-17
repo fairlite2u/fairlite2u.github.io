@@ -1,0 +1,38 @@
+{
+    "temple": [
+        {
+            "dctempleclosures": "Closed for Renovation"
+        },
+
+        {
+            "latempleclosures": [
+                "Tuesday, 16 July 2019 - Monday, 29 July 2019",
+                "Saturday, 5 October 2019",
+                "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+                "Friday, 29 November 2019 (Limited Hours)",
+                "Tuesday, 24 December 2019 - Thursday, 26 December 2019",
+                "Tuesday, 31 December 2019"
+            ]
+        },  
+        
+        {
+            "mttimptempleclosures": [
+                "Wednesday, 24 July 2019",
+                "Saturday, 5 October 2019",
+                "Monday, 11 November 2019 - Thursday, 28 November 2019",
+                "Tuesday, 24 December 2019 - Thursday, 26 December 2019",
+                "Tuesday, 31 December 2019"
+            ]
+        }, 
+
+       
+        {
+            "freibergtempleclosures" : [
+                "Monday, 9 September 2019 - Monday, 23 September 2019",
+                "Saturday, 5 October 2019",
+                "Tuesday, 24 December 2019 - Thursday, 26 December 2019",
+                "Tuesday, 31 December 2019"
+            ]
+        }
+    ]
+}
