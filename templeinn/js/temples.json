@@ -1,11 +1,13 @@
 {
-    "temple": [
+    "temples": [
         {
-            "dctempleclosures": "Closed for Renovation"
+            "name": "Washington D.C. Temple", 
+            "closures": "closed for renovation"
         },
 
         {
-            "latempleclosures": [
+            "name": "Los Angeles California Temple",
+            "closures": [
                 "Tuesday, 16 July 2019 - Monday, 29 July 2019",
                 "Saturday, 5 October 2019",
                 "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
@@ -16,7 +18,8 @@
         },  
         
         {
-            "mttimptempleclosures": [
+            "name": "Mount Timpanogos Utah Temple",
+            "closures": [
                 "Wednesday, 24 July 2019",
                 "Saturday, 5 October 2019",
                 "Monday, 11 November 2019 - Thursday, 28 November 2019",
@@ -24,10 +27,10 @@
                 "Tuesday, 31 December 2019"
             ]
         }, 
-
-       
+     
         {
-            "freibergtempleclosures" : [
+            "name": "Freiberg Germany Temple",
+            "closures": [
                 "Monday, 9 September 2019 - Monday, 23 September 2019",
                 "Saturday, 5 October 2019",
                 "Tuesday, 24 December 2019 - Thursday, 26 December 2019",
