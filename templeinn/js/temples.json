@@ -2,7 +2,9 @@
     "temples": [
         {
             "name": "Washington D.C. Temple", 
-            "closures": "closed for renovation"
+            "closures": [
+                "closed for renovation"
+            ]
         },
 
         {
