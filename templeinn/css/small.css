@@ -25,7 +25,7 @@ h2 {
     text-align: center;
 }
 
-header, .navbox, footer {
+header, .logobar, .navbar, footer {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -39,7 +39,7 @@ header {
     background-color: #336699;
     color: #f5f5f5;
     border: 1px solid #223f64;
-    display: flex;
+
 }
 
 header img {
@@ -51,7 +51,7 @@ header img {
 /******Navigation******/
 
 nav {
-    background-color: #376996;
+    background-color: #336699;
     text-align: center; 
     display: inline-block;
     vertical-align: top;
@@ -59,7 +59,7 @@ nav {
 }
 
 .navigation {
-    padding-top: 15px;
+    padding-top: 0px;
     list-style-type: none;
 }
 
@@ -134,7 +134,7 @@ main {
 .featurearticle {
     margin: 20px auto 10px;
     padding: 10px;
-    background-color: #6a8fb4;
+    background-color: #7d9dbe;
     border: 2px solid #223f64;
     line-height: 1.25rem;
 }
@@ -161,7 +161,7 @@ main {
     padding: 8px 12px;
     position: absolute;
     bottom: 4px;
-    width: 100%;
+    width: 94%;
     text-align: center;
 }
 /* Number text (1/4 etc) */

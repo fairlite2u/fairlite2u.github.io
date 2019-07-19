@@ -2,20 +2,25 @@
     /*****header*****/
     header {
         width: 100%;
-        margin-top: 25px;
-        height: 75px;
+        margin: 25px auto 100px;
+        height: 100px;
+
     }
     h1 {
         font-size: 2.6rem;
     }
     #logo {
-        position:relative;
+
         width: 150px;
-        margin: 0 auto;
+        margin-left: 5px;
+        margin-top: -25px;
+        margin-right: 20px;
 
     }
-    
+
     /*****navigation******/
+
+
     .navigation li:first-child {
         display: none;
     }
@@ -24,11 +29,10 @@
         margin-right: .75rem;
         list-style-type: none;
     }
-    .navigation {
-        flex-direction: row;
 
-    }
     /*****Main*****/
+
+
     #featuretitle {
         text-align: left;
     }
