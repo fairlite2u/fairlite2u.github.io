@@ -43,30 +43,23 @@ header {
 }
 
 header img {
-    width: 75px;
+    width: 99%;
     height: auto;
-
-    margin: 10px 50px;
+    border: 2px solid #e6cd75;
 }
 
 /******Navigation******/
-.navbox {
-    margin: 0 auto;
-    display: flex;
-
-    align-items: center;
-    width: 960px;
-
-}
 
 nav {
     background-color: #376996;
-    text-align: center; display: inline-block;
+    text-align: center; 
+    display: inline-block;
     vertical-align: top;
     margin: 5px auto;
 }
 
 .navigation {
+    padding-top: 15px;
     list-style-type: none;
 }
 
@@ -76,6 +69,7 @@ nav a {
     color: #e6cd75;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .navigation li:first-child {
@@ -100,11 +94,18 @@ nav a:hover {
     display: block;
 }
 /*****Main Content Home Page*****/
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 #calltoaction {
     max-width: 400px;
     margin: 1rem auto;
+    padding: .7rem;
     border: 2px solid #223f64;
     background-color: #efdfa7;
+    color: #223f64;
     display: block;
     justify-content: center;
     text-align: center;
@@ -117,7 +118,7 @@ nav a:hover {
     color: #b4c7d9;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
-    margin: 1rem 0 1rem 2%;
+    margin: 1rem 0 0 2%;
     width: 100%;
     max-width: 250px;
 }
@@ -133,7 +134,6 @@ nav a:hover {
 .featurearticle {
     margin: 20px auto 10px;
     padding: 10px;
-    max-width: 800px;
     background-color: #6a8fb4;
     border: 2px solid #223f64;
     line-height: 1.25rem;
@@ -144,6 +144,7 @@ nav a:hover {
 }
 .featureimg {
     width: 100%;
+    padding-bottom: 5px;
 }
 
 /* Slideshow container */
@@ -160,7 +161,7 @@ nav a:hover {
     padding: 8px 12px;
     position: absolute;
     bottom: 4px;
-    width: 94%;
+    width: 100%;
     text-align: center;
 }
 /* Number text (1/4 etc) */
@@ -185,30 +186,14 @@ nav a:hover {
 .dotactive {
     background-color: #717171;
 }
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
 
-    to {
-        opacity: 1
-    }
-}
-@keyframes fade {
-    from {
-        opacity: .4
-    }
 
-    to {
-        opacity: 1
-    }
+
+/*****Temples Page*****/
+.templeinfo {
+    background-color: #376996;
+    color: #f5f5f5;
+    border: 1px solid #223f64;
 }
 
 /*****Footer*****/

@@ -10,6 +10,7 @@ request.onload = function() {
     let output1 = document.querySelector('.closurebox1');
     let output2 = document.querySelector('.closurebox2');
     let output3 = document.querySelector('.closurebox3');
+    let output4 = document.querySelector('.closurebox4');
     console.log(templedata);
     for (let i = 0; i < temples.length; i++) {
         if (temples[i].name == "Los Angeles California Temple") {
@@ -53,6 +54,21 @@ request.onload = function() {
                 listItem.textContent = closures;
                 list.appendChild(listItem);
                 output3.appendChild(list);
+            }
+        }
+    };
+    for (let i = 0; i < temples.length; i++) {
+        if (temples[i].name == "Mount Timpanogos Utah Temple") {
+            let templeclosures = temples[i].closures;
+            let numclosures = 0; 
+            for (let e = 0; e < templeclosures.length; e++) {
+                let closures = templeclosures[numclosures];
+                numclosures++;                 
+                let list = document.createElement('ul');
+                let listItem = document.createElement('li');
+                listItem.textContent = closures;
+                list.appendChild(listItem);
+                output4.appendChild(list);
             }
         }
     };

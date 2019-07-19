@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Temple Inn & Suites | Temples | Reservations | Services</title>
     <meta name="description" content="Providing lodging and services related to temple visits around the world">
-    <link href="<link href="https://fonts.googleapis.com/css?family=Lato%7cTangerine:700&display=swap" rel="stylesheet">" rel="stylesheet">
+    <link href="<link href=" https://fonts.googleapis.com/css?family=Lato%7cTangerine:700&display=swap"
+        rel="stylesheet">
     <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
@@ -16,25 +17,99 @@
 
 <body>
     <header>
-        <div class="navbar">
-            <div class="navbox">
-                <span>
-                    <a href="./">
-                        <img src="images/logo.png" alt="Temple Inn & Suites Logo">
-                    </a>
-                </span>
-                <div class="navbox">
-                    <nav class="navigation">
-                        <ul>
-                            <li><a href="#" class="menu" onclick="toggleMenu()">&equiv; Menu</a></li>
-                            <li><a href="./" class="active">Home</a></li>
-                            <li><a href="#">Temples</a></li>
-                            <li><a href="#">Reservations</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+        <div class="logo">
+            <a href="./">
+                <img id="logo" src="images/logo.png" alt="Temple Inn & Suites Logo">
+            </a>
 
+        <nav class="navigation">
+            <ul>
+                <li><a href="#" class="menu" onclick="toggleMenu()">&equiv; Menu</a></li>
+                <li><a href="./">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html" class="active">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
     </header>
+    <main>
+
+            <div class="stormbox">
+                    <h2 class="stormhead">Storm Center</h2>
+                    <h3 class="stormsubhead">Would you like to report severe weather conditions?</h3><br>
+                    <h3 class="stormsubhead">Fill out the form below:</h3>
+                    <p class="stormsubhead" id="subrequired"><em>items marked with a * are required</em></p>
+                    <form method="GET" action="thanks.html" name="stormreport">
+                        <fieldset>
+                            <legend>Eye Witness Information</legend>
+                            <label class="userinfo">Full Name* <input type="text" name="fullname" required
+                                    pattern="[A-Za-z]{5, }"></label>
+                            <label class="userinfo">Email Address <input type="email" name="email"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                    placeholder="report@theweatherwatcher.com"></label>
+                            <label class="userinfo">Phone Number* <input type="tel" name="phone" required
+                                    placeholder="1235556789"></label>
+                            <label class="userinfo">Zip Code* <input type="number" name="zip" required></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Storm Information</legend>
+                            <label class="storminfo">Storm Date <input type="date" name="stormdate"> </label>
+                            <label class="storminfo">Storm Type <input list="types" name="stormtype">
+                                <datalist id="types">
+                                    <option value="Flood"></option>
+                                    <option value="Hail"></option>
+                                    <option value="Hurricane"></option>
+                                    <option value="Thunderstorm"></option>
+                                    <option value="Tornado"></option>
+                                </datalist>
+                            </label>
+                            <label class="slider">Storm Severity (1 to 10)
+                                <span id="ratingvalue">5</span>
+                                <input type="range" id="scale" value="5" min="1" max="10" step="1"
+                                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            </label>
+                            <label class="storminfo" id="region">Storm Region
+                                <select name="region">
+                                    <option value="" selected disabled>Select Region...</option>
+                                    <option value="preston">Preston</option>
+                                    <option value="sugarcity">Sugar City</option>
+                                    <option value="fishhaven">Fish Haven</option>
+                                </select>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Are You In Danger?</legend>
+                            <label class="priority"><input type="radio" name="danger" value="yes"> Yes</label>
+                            <label class="priority"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                            <label class="priority"><input type="radio" name="danger" value="no"> No</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Additional Information: </legend>
+                            <textarea name="addinfo" id="addinfo" cols="34" rows="5"></textarea>
+                        </fieldset>
+                        <input type="submit" name="buttonsubmit" id="submitbutton" value="Send Your Report">
+                    </form>
+                </div>
+        
+
+    </main>
+    </body>
+
+    <footer>
+            <p>&copy;2019 Temple Inn & Suites | <a class="sources" href="sources.html">Attributions</a> | Designed by Aspie
+                Design<br>
+                <span id="currentdate">
+                </span>
+            </p>
+        </footer>
+    
+        <script src="js/hamburger.js"></script>
+        <script src="js/slides.js"></script>
+        <script src="js/currentdate.js"></script>
+    </body>
+    
+    </html>
+
+    </html>
