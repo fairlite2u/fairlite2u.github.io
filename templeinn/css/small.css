@@ -7,7 +7,7 @@
 
 body {
     font-size: 1em;
-    background-color: #c1c1c1;
+    background-color: #d7d7d7;
     color: #172a3a;
     font-family: 'Lato', sans-serif;
 }
@@ -19,12 +19,16 @@ h4,
 h5,
 h6 {
     font-family: 'Tangerine', sans-serif;
+
 }
 h2 {
     font-size: 3em;
     text-align: center;
 }
 
+h4 {
+    font-size: 2em;
+}
 header, .logobar, .navbar, footer {
     display: flex;
     flex-flow: row wrap;
@@ -42,7 +46,7 @@ header {
 
 }
 
-header img {
+.logohead {
     width: 99%;
     height: auto;
     border: 2px solid #e6cd75;
@@ -98,7 +102,7 @@ main {
     max-width: 800px;
     margin: 0 auto;
 }
-
+/* Call to action */
 #calltoaction {
     max-width: 400px;
     margin: 1rem auto;
@@ -110,8 +114,6 @@ main {
     justify-content: center;
     text-align: center;
 }
-
-
 #submitbutton {
     border: none;
     background-color: #223f64;
@@ -122,7 +124,7 @@ main {
     width: 100%;
     max-width: 250px;
 }
-
+/* Featured Temple */
 #featurehead {
     padding: 1.5rem 0 0;
 }
@@ -134,37 +136,33 @@ main {
 .featurearticle {
     margin: 20px auto 10px;
     padding: 10px;
-    background-color: #7d9dbe;
+    background-color: #8fabc7;
     border: 2px solid #223f64;
     line-height: 1.25rem;
 }
 .featurearticle ul {
-
     padding: 0 20px;
 }
 .featureimg {
     width: 100%;
     padding-bottom: 5px;
 }
-
-/* Slideshow container */
+/* Slideshow */
 .slideshow-container {
     max-width: 400px;
     position: relative;
     margin: auto;
 }
-/* Caption text */
 .text {
     color: #223f64;
     background-color: #e6cd75;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 4px;
+    bottom: 8px;
     width: 94%;
     text-align: center;
 }
-/* Number text (1/4 etc) */
 .numbertext {
     color: #f2f2f2;
     font-size: 14px;
@@ -173,7 +171,6 @@ main {
     position: absolute;
     top: 0;
 }
-/* The dots/bullets/indicators */
 .dot {
     height: 15px;
     width: 15px;
@@ -186,31 +183,58 @@ main {
 .dotactive {
     background-color: #717171;
 }
+/* Contact info */
+.contact {
+    max-width: 880px;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: #8fabc7;
+}
+.icons {
+    width: 50px;
+    padding: 10px;
+}
 
+.map {
+    width: 100%;
+}
+
+
+.contact {
+    display: flex;
+    flex-flow: row wrap;
+}
+.leftcol, .rightcol {
+    width: 99%;
+    text-align: center;
+  }
 
 
 /*****Temples Page*****/
 .templeinfo {
-    background-color: #376996;
+    background-color: #8fabc7;
     color: #f5f5f5;
     border: 1px solid #223f64;
+}
+.closurebox1 ul, .closurebox2 ul, .closurebox3 ul, .closurebox4 ul {
+    padding: 0 20px;
 }
 
 /*****Footer*****/
 footer {
     margin: 10px auto;
-    background-color: #376996;
+    background-color: #336699;
     color: #f5f5f5;
     border: 1px solid #223f64;
     text-align: center;
     font-size: .7em;
 } 
 .sources {
-    color: #a3e1f8;
+    color: #e6cd75;
     text-decoration: none;
 }
 
 footer a:hover {
-    background: #fff3cd;
-    color: #07304b;
+    background: #dddddd;
+    color: #000000;
 }

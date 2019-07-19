@@ -9,9 +9,8 @@
     header {
         margin-bottom: 25px;
     }
-    #logo {
+    .logohead {
         position: absolute;
-        width: 225px;
         margin-left: -250px;
         margin-top: -75px;
     }

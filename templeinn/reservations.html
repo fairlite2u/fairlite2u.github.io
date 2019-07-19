@@ -12,13 +12,14 @@
     <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 </head>
 
 <body>
     <header>
         <div class="logobar">
             <a href="./">
-                <img id="logo" src="images/logo.png" alt="Temple Inn & Suites Logo">
+                <img class="logohead" src="images/logo.png" alt="Temple Inn & Suites Logo">
             </a>
         </div>
         <div class="navbar">
@@ -36,63 +37,121 @@
     </header>
     <main>
 
-            <div class="stormbox">
-                    <h2 class="stormhead">Storm Center</h2>
-                    <h3 class="stormsubhead">Would you like to report severe weather conditions?</h3><br>
-                    <h3 class="stormsubhead">Fill out the form below:</h3>
-                    <p class="stormsubhead" id="subrequired"><em>items marked with a * are required</em></p>
-                    <form method="GET" action="thanks.html" name="stormreport">
-                        <fieldset>
-                            <legend>Eye Witness Information</legend>
-                            <label class="userinfo">Full Name* <input type="text" name="fullname" required
-                                    pattern="[A-Za-z]{5, }"></label>
-                            <label class="userinfo">Email Address <input type="email" name="email"
-                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                                    placeholder="report@theweatherwatcher.com"></label>
-                            <label class="userinfo">Phone Number* <input type="tel" name="phone" required
-                                    placeholder="1235556789"></label>
-                            <label class="userinfo">Zip Code* <input type="number" name="zip" required></label>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Storm Information</legend>
-                            <label class="storminfo">Storm Date <input type="date" name="stormdate"> </label>
-                            <label class="storminfo">Storm Type <input list="types" name="stormtype">
-                                <datalist id="types">
-                                    <option value="Flood"></option>
-                                    <option value="Hail"></option>
-                                    <option value="Hurricane"></option>
-                                    <option value="Thunderstorm"></option>
-                                    <option value="Tornado"></option>
-                                </datalist>
-                            </label>
-                            <label class="slider">Storm Severity (1 to 10)
-                                <span id="ratingvalue">5</span>
-                                <input type="range" id="scale" value="5" min="1" max="10" step="1"
-                                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                            </label>
-                            <label class="storminfo" id="region">Storm Region
-                                <select name="region">
-                                    <option value="" selected disabled>Select Region...</option>
-                                    <option value="preston">Preston</option>
-                                    <option value="sugarcity">Sugar City</option>
-                                    <option value="fishhaven">Fish Haven</option>
-                                </select>
-                            </label>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Are You In Danger?</legend>
-                            <label class="priority"><input type="radio" name="danger" value="yes"> Yes</label>
-                            <label class="priority"><input type="radio" name="danger" value="maybe"> Maybe</label>
-                            <label class="priority"><input type="radio" name="danger" value="no"> No</label>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Additional Information: </legend>
-                            <textarea name="addinfo" id="addinfo" cols="34" rows="5"></textarea>
-                        </fieldset>
-                        <input type="submit" name="buttonsubmit" id="submitbutton" value="Send Your Report">
-                    </form>
-                </div>
-        
+            <form action="">
+                    <!--  General -->
+                    <div class="form-group">
+                      <h2 class="heading">Booking & contact</h2>
+                      <div class="controls">
+                        <input type="text" id="name" class="floatLabel" name="name">
+                        <label for="name">Name</label>
+                      </div>
+                      <div class="controls">
+                        <input type="text" id="email" class="floatLabel" name="email">
+                        <label for="email">Email</label>
+                      </div>       
+                      <div class="controls">
+                        <input type="tel" id="phone" class="floatLabel" name="phone">
+                        <label for="phone">Phone</label>
+                      </div>
+                        <div class="grid">
+                          <div class="col-2-3">
+                            <div class="controls">
+                             <input type="text" id="street" class="floatLabel" name="street">
+                             <label for="street">Street</label>
+                            </div>          
+                          </div>
+                          <div class="col-1-3">
+                            <div class="controls">
+                              <input type="number" id="street-number" class="floatLabel" name="street-number">
+                              <label for="street-number">Number</label>
+                            </div>          
+                          </div>
+                        </div>
+                        <div class="grid">
+                          <div class="col-2-3">
+                            <div class="controls">
+                              <input type="text" id="city" class="floatLabel" name="city">
+                              <label for="city">City</label>
+                            </div>         
+                          </div>
+                          <div class="col-1-3">
+                            <div class="controls">
+                              <input type="text" id="post-code" class="floatLabel" name="post-code">
+                              <label for="post-code">Post Code</label>
+                            </div>         
+                          </div>
+                        </div>
+                        <div class="controls">
+                          <input type="text" id="country" class="floatLabel" name="country">
+                          <label for="country">Country</label>
+                        </div>
+                    </div>
+                    <!--  Details -->
+                    <div class="form-group">
+                      <h2 class="heading">Details</h2>
+                      <div class="grid">
+                      <div class="col-1-4 col-1-4-sm">
+                        <div class="controls">
+                          <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+                          <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrive</label>
+                        </div>      
+                      </div>
+                      <div class="col-1-4 col-1-4-sm">
+                        <div class="controls">
+                          <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
+                          <label for="depart" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Depart</label>
+                        </div>      
+                      </div>
+                        </div>
+                        <div class="grid">
+                      <div class="col-1-3 col-1-3-sm">
+                        <div class="controls">
+                          <i class="fa fa-sort"></i>
+                          <select class="floatLabel">
+                            <option value="blank"></option>
+                            <option value="1">1</option>
+                            <option value="2" selected>2</option>
+                            <option value="3">3</option>
+                          </select>
+                          <label for="fruit"><i class="fa fa-male"></i>&nbsp;&nbsp;People</label>
+                        </div>      
+                      </div>
+                      <div class="col-1-3 col-1-3-sm">
+                      <div class="controls">
+                        <i class="fa fa-sort"></i>
+                        <select class="floatLabel">
+                          <option value="blank"></option>
+                          <option value="deluxe" selected>With Bathroom</option>
+                          <option value="Zuri-zimmer">Without Bathroom</option>
+                        </select>
+                        <label for="fruit">Room</label>
+                       </div>     
+                      </div>
+                  
+                      <div class="col-1-3 col-1-3-sm">
+                      <div class="controls">
+                        <i class="fa fa-sort"></i>
+                        <select class="floatLabel">
+                          <option value="blank"></option>
+                          <option value="single-bed">Zweibett</option>
+                          <option value="double-bed" selected>Doppelbett</option>
+                        </select>
+                        <label for="fruit">Bedding</label>
+                       </div>     
+                      </div>
+                        
+                       </div>
+                        <div class="grid">
+                          <p class="info-text">Please describe your needs e.g. Extra beds, children's cots</p>
+                          <br>
+                          <div class="controls">
+                            <textarea name="comments" class="floatLabel" id="comments"></textarea>
+                            <label for="comments">Comments</label>
+                            </div>
+                              <button type="submit" value="Submit" class="col-1-4">Submit</button>
+                        </div>  
+                    </div> <!-- /.form-group -->
+                  </form>
 
     </main>
     </body>
@@ -106,7 +165,7 @@
         </footer>
     
         <script src="js/hamburger.js"></script>
-        <script src="js/slides.js"></script>
+
         <script src="js/currentdate.js"></script>
     </body>
     
