@@ -175,7 +175,7 @@ main {
 .slideshow-container {
     max-width: 400px;
     position: relative;
-    margin: auto;
+    margin: 10px auto;
 }
 
 .text {
@@ -184,7 +184,7 @@ main {
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
+    bottom: 12px;
     width: 94%;
     text-align: center;
 }

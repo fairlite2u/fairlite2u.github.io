@@ -11,12 +11,19 @@
         margin-left: -250px;
         margin-top: -75px;
     }
+    .slideshow-container {
+        max-width: 800px;
+
+    }
+    .text {
+        width: 97%;
+    }
     /*****Gallery*****/
     .templegallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
     .templename {
-        font-size: 2.5em;
+        font-size: 3em;
     }
     /*****Main Page*****/
     #featuretitle {

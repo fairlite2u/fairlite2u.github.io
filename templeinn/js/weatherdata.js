@@ -54,3 +54,29 @@ weatherRequest4.onload = function() {
     document.getElementById('humidity4').innerHTML= weatherData.main.humidity.toFixed();
     document.getElementById('windspeed4').innerHTML = weatherData.wind.speed.toFixed();
 }
+
+let weatherRequest5 = new XMLHttpRequest();
+let apiURLstring5 = 'https://api.openweathermap.org/data/2.5/weather?id=3448439&units=imperial&APPID=ff571c48af1923ac4fbdf7523b913171';
+weatherRequest5.open('Get', apiURLstring5, true);
+weatherRequest5.send();
+weatherRequest5.onload = function() {
+    let weatherData = JSON.parse(weatherRequest5.responseText);
+    document.getElementById('current5').innerHTML = weatherData.weather[0].description;
+    document.getElementById('hightemp5').innerHTML = weatherData.main.temp_max.toFixed();
+    document.getElementById('windchill5').innerHTML = windChill(weatherData.main.temp_max, weatherData.wind.speed).toFixed();
+    document.getElementById('humidity5').innerHTML= weatherData.main.humidity.toFixed();
+    document.getElementById('windspeed5').innerHTML = weatherData.wind.speed.toFixed();
+}
+
+let weatherRequest6 = new XMLHttpRequest();
+let apiURLstring6 = 'https://api.openweathermap.org/data/2.5/weather?id=5844096&units=imperial&APPID=ff571c48af1923ac4fbdf7523b913171';
+weatherRequest6.open('Get', apiURLstring6, true);
+weatherRequest6.send();
+weatherRequest6.onload = function() {
+    let weatherData = JSON.parse(weatherRequest6.responseText);
+    document.getElementById('current6').innerHTML = weatherData.weather[0].description;
+    document.getElementById('hightemp6').innerHTML = weatherData.main.temp_max.toFixed();
+    document.getElementById('windchill6').innerHTML = windChill(weatherData.main.temp_max, weatherData.wind.speed).toFixed();
+    document.getElementById('humidity6').innerHTML= weatherData.main.humidity.toFixed();
+    document.getElementById('windspeed6').innerHTML = weatherData.wind.speed.toFixed();
+}
