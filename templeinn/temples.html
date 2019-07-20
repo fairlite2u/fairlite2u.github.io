@@ -37,155 +37,261 @@
     </header>
 
     <main>
-        <section class="templeinfo">
-            <h3>Los Angeles California Temple</h3>
-            <h4>Contact information</h4>
-            <p>10777 Santa Monica Blvd</p>
-            <p>Los Angeles CA 90025-4718</p>
-            <p>United States</p>
-            <p>(1) 310-474-5569</p>
-            <br>
-            <h4>Services</h4>
-            <p>Clothing rental available</p>
-            <p>Cafeteria available</p>
-            <p>Patron housing available</p>
-            <p>Distribution center nearby</p>
-            <br>
-            <h4>History</h4>
-            <p>Announced: 6 March 1937</p>
-            <p>Groundbreaking: 22 September 1951</p>
-            <p>Dedicated: 11 March 1956</p>
-            <br>
-            <h4>Closures</h4>
-            <div class="closurebox1">
-            </div>
-            <br>
-            <div class="weather">
-                <h4>Current Weather</h4>
-                <p class="label">Currently: </p>
-                <p class="data"><span id="currenttemp"></span></p>
-                <p class="label">High: </p>
-                <p class="data"><span id="hightemp"></span>&deg; F</p>
-                <p class="label">Wind Chill: </p>
-                <p class="data"><span id="windchill"></span>&deg; F</p>
-                <p class="label">Humidity: </p>
-                <p class="data"><span id="humidity"></span>%</p>
-                <p class="label">Wind Speed: </p>
-                <p class="data"><span id="windspeed"></span> mph</p>
-            </div>
-        </section>
+        <div class="templegallery">
+            <section class="templeinfo">
+                <h3 class="templename">Los Angeles California Temple</h3>
+                <button class="collapsible">
+                    Contact information
+                </button>
+                <div class="content">
+                    <br>
+                    <p>10777 Santa Monica Blvd</p>
+                    <p>Los Angeles CA 90025-4718</p>
+                    <p>United States</p>
+                    <p>&phone; &nbsp; (1) 310-474-5569</p>
+                    <br>
+                </div>
+                <button class="collapsible">
+                    Services
+                </button>
+                <div class="content">
+                    <br>
+                    <ul>
+                        <li>Clothing rental available</li>
+                        <li>Cafeteria available</li>
+                        <li>Patron housing available</li>
+                        <li>Distribution center nearby</li>
+                    </ul>
+                    <br>
+                </div>
+                <button class="collapsible">
+                    History
+                </button>
+                <div class="content">
+                    <br>
+                    <ul>
+                        <li>Announced: March 6, 1937</li>
+                        <li>Groundbreaking: September 22, 1951</li>
+                        <li>Dedicated: March 11, 1956</li>
+                    </ul>
+                    <br>
+                </div>
+                <button class="collapsible">
+                    Closures
+                </button>
+                <div class="content">
+                    <br>
+                    <div class="closurebox1">
+                    </div>
+                    <br>
+                </div>
+                <button class="collapsible weather">
+                    Current Weather
+                </button>
+                <div class="content summary">
+                    <p class="label first">Currently: </p>
+                    <p class="data first"><span id="current"></span></p>
+                    <p class="label">High: </p>
+                    <p class="data"><span id="hightemp"></span>&deg; F</p>
+                    <p class="label">Wind Chill: </p>
+                    <p class="data"><span id="windchill"></span>&deg; F</p>
+                    <p class="label">Humidity: </p>
+                    <p class="data"><span id="humidity"></span>%</p>
+                    <p class="label last">Wind Speed: </p>
+                    <p class="data"><span class="last" id="windspeed"></span> mph</p>
+                </div>
 
-        <section class="templeinfo">
-            <h3>Freiberg Germany Temple</h3>
-            <h4>Contact information</h4>
-            <p>Hainichener Strasse 64</p>
-            <p>09599 Freiberg</p>
-            <p>Germany</p>
-            <p>(49) 3731-35960</p>
-            <br>
-            <h4>Services</h4>
-            <p>Clothing rental available</p>
-            <p>No cafeteria available</p>
-            <p>Patron housing available</p>
-            <p>Distribution center nearby</p>
-            <br>
-            <h4>History</h4>
-            <p>Announced: 9 October 1982</p>
-            <p>Groundbreaking: 23 April 1983</p>
-            <p>Dedicated: 29 June 1985</p>
-            <p>Rededicated: 7 September 2002</p>
-            <p>Rededicated: 4 September 2016</p>
-            <br>
-            <h4>Closures</h4>
-            <div class="closurebox2">
-            </div>
-            <br>
-            <div class="weather">
-                <h4>Current Weather</h4>
-                <p class="label">Currently: </p>
-                <p class="data"><span id="currenttemp2"></span></p>
-                <p class="label">High: </p>
-                <p class="data"><span id="hightemp2"></span>&deg; F</p>
-                <p class="label">Wind Chill: </p>
-                <p class="data"><span id="windchill2"></span>&deg; F</p>
-                <p class="label">Humidity: </p>
-                <p class="data"><span id="humidity2"></span>%</p>
-                <p class="label">Wind Speed: </p>
-                <p class="data"><span id="windspeed2"></span> mph</p>
-            </div>
-        </section>
+            </section>
 
-        <section class="templeinfo">
-            <h3>Washington D.C. Temple</h3>
-            <h4>Contact information</h4>
-            <p>9900 Stoneybrook Dr</p>
-            <p>Kensington MD 20895-3199</p>
-            <p>United States</p>
-            <br>
-            <h4>Services</h4>
-            <p>Temple closed during renovation</p>
-            <br>
-            <h4>History</h4>
-            <p>Announced: 15 November 1968</p>
-            <p>Groundbreaking: 28 May 1971</p>
-            <p>Dedicated: 19 November 1974</p>
-            <br>
-            <h4>Closures</h4>
-            <div class="closurebox3">
-            </div>
-            <br>
-            <div class="weather">
-                <h4>Current Weather</h4>
-                <p class="label">Currently: </p>
-                <p class="data"><span id="currenttemp3"></span></p>
-                <p class="label">High: </p>
-                <p class="data"><span id="hightemp3"></span>&deg; F</p>
-                <p class="label">Wind Chill: </p>
-                <p class="data"><span id="windchill3"></span>&deg; F</p>
-                <p class="label">Humidity: </p>
-                <p class="data"><span id="humidity3"></span>%</p>
-                <p class="label">Wind Speed: </p>
-                <p class="data"><span id="windspeed3"></span> mph</p>
-            </div>
-        </section>
+            <section class="templeinfo">
+                <h3 class="templename">Freiberg Germany Temple</h3>
+                <button class="collapsible">
+                    Contact information
+                </button>
+                <div class="content">
+                    <br>
+                    <p>Hainichener Strasse 64</p>
+                    <p>09599 Freiberg</p>
+                    <p>Germany</p>
+                    <p>&phone; &nbsp; (49) 3731-35960</p>
+                    <br>
+                </div>
+                <button class="collapsible">
+                    Services
+                </button>
+                <div class="content">
+                    <br>
+                    <ul>
+                    <li>Clothing rental available</li>
+                    <li>No cafeteria available</li>
+                    <li>Patron housing available</li>
+                    <li>Distribution center nearby</li>
+                    </ul>
+                    <br>
+                </div>
+                <button class="collapsible">
+                    History
+                </button>
+                <div class="content">
+                    <br>
+                    <ul>
+                    <li>Announced: October 9, 1982</li>
+                    <li>Groundbreaking: April 23, 1983</li>
+                    <li>Dedicated: June 29, 1985</li>
+                    <li>Rededicated: September 7, 2002</li>
+                    <li>Rededicated: September 4, 2016</li>
+                    </ul>
+                    <br>
+                </div>
+                <button class="collapsible">
+                    Closures
+                </button>
+                <div class="content">
+                    <br>
+                    <div class="closurebox2">
+                    </div>
+                    <br>
+                </div>
+                <button class="collapsible weather">
+                    Current Weather
+                </button>
+                <div class="content summary">
+                    <p class="label first">Currently: </p>
+                    <p class="data first"><span id="current2"></span></p>
+                    <p class="label">High: </p>
+                    <p class="data"><span id="hightemp2"></span>&deg; F</p>
+                    <p class="label">Wind Chill: </p>
+                    <p class="data"><span id="windchill2"></span>&deg; F</p>
+                    <p class="label">Humidity: </p>
+                    <p class="data"><span id="humidity2"></span>%</p>
+                    <p class="label last">Wind Speed: </p>
+                    <p class="data"><span class="last" id="windspeed2"></span> mph</p>
+                </div>
+            </section>
 
-        <section class="templeinfo">
-            <h3>Mount Timpanogos Utah Temple</h3>
-            <h4>Contact information</h4>
-            <p>742 N 900 E</p>
-            <p>American Fork UT 84003-9124</p>
-            <p>United States</p>
-            <p>(1) 801-763-4540</p>
-            <br>
-            <h4>Services</h4>
-            <p>Clothing rental available</p>
-            <p>Cafeteria available</p>
-            <p>No patron housing available</p>
-            <p>Distribution center nearby</p>
-            <br>
-            <h4>History</h4>
-            <p>Announced: 3 October 1992</p>
-            <p>Groundbreaking: 9 October 1993</p>
-            <p>Dedicated: 13 October 1996</p>
-            <br>
-            <h4>Closures</h4>
-            <div class="closurebox4">
-            </div>
-            <br>
-            <div class="weather">
-                <h4>Current Weather</h4>
-                <p class="label">Currently: </p>
-                <p class="data"><span id="currenttemp4"></span></p>
-                <p class="label">High: </p>
-                <p class="data"><span id="hightemp4"></span>&deg; F</p>
-                <p class="label">Wind Chill: </p>
-                <p class="data"><span id="windchill4"></span>&deg; F</p>
-                <p class="label">Humidity: </p>
-                <p class="data"><span id="humidity4"></span>%</p>
-                <p class="label">Wind Speed: </p>
-                <p class="data"><span id="windspeed4"></span> mph</p>
-            </div>
-        </section>
+            <section class="templeinfo">
+                <h3 class="templename">Washington D.C. Temple</h3>
+                <button class="collapsible">
+                    Contact information
+                </button>
+                <div class="content">
+                    <br>
+                    <p>9900 Stoneybrook Dr</p>
+                    <p>Kensington MD 20895-3199</p>
+                    <p>United States</p>
+                    <p>&phone; &nbsp; Not in service during closure</p>
+                    <br>
+                </div>
+                <button class="collapsible">
+                    Services
+                </button>
+                <div class="content">
+                    <br>
+                    <p>Temple closed during renovation</p>
+                    <br>
+                </div>
+                <button class="collapsible">
+                    History
+                </button>
+                <div class="content">
+                    <br>
+                    <ul>
+                    <li>Announced: November 15, 1968</li>
+                    <li>Groundbreaking: May 28, 1971</li>
+                    <li>Dedicated: November 19, 1974</li>
+                    </ul>
+                    <br>
+                </div>
+                <button class="collapsible">
+                    Closures
+                </button>
+                <div class="content">
+                    <br>
+                    <div class="closurebox3">
+                    </div>
+                    <br>
+                </div>
+                <button class="collapsible weather">
+                    Current Weather
+                </button>
+                <div class="content summary">
+                    <p class="label first">Currently: </p>
+                    <p class="data first"><span id="current3"></span></p>
+                    <p class="label">High: </p>
+                    <p class="data"><span id="hightemp3"></span>&deg; F</p>
+                    <p class="label">Wind Chill: </p>
+                    <p class="data"><span id="windchill3"></span>&deg; F</p>
+                    <p class="label">Humidity: </p>
+                    <p class="data"><span id="humidity3"></span>%</p>
+                    <p class="label last">Wind Speed: </p>
+                    <p class="data"><span class="last" id="windspeed3"></span> mph</p>
+                </div>
+            </section>
+
+            <section class="templeinfo">
+                <h3 class="templename">Mount Timpanogos Utah Temple</h3>
+                <button class="collapsible">
+                    Contact information
+                </button>
+                <div class="content">
+                    <br>
+                    <p>742 N 900 E</p>
+                    <p>American Fork UT 84003-9124</p>
+                    <p>United States</p>
+                    <p>&phone; &nbsp; (1) 801-763-4540</p>
+                    <br>
+                </div>
+                <button class="collapsible">
+                    Services
+                </button>
+                <div class="content">
+                    <br>
+                    <ul>
+                    <li>Clothing rental available</li>
+                    <li>Cafeteria available</li>
+                    <li>No patron housing available</li>
+                    <li>Distribution center nearby</li>
+                    </ul>
+                    <br>
+                </div>
+                <button class="collapsible">
+                    History
+                </button>
+                <div class="content">
+                    <br>
+                    <ul>
+                    <li>Announced: October 3, 1992</li>
+                    <li>Groundbreaking: October 9, 1993</li>
+                    <li>Dedicated: October 13, 1996</li>
+                    </ul>
+                    <br>
+                </div>
+                <button class="collapsible">
+                    Closures
+                </button>
+                <div class="content">
+                    <br>
+                    <div class="closurebox4">
+                    </div>
+                    <br>
+                </div>
+                <button class="collapsible weather">
+                    Current Weather
+                </button>
+                <div class="content summary">
+                    <p class="label first">Currently: </p>
+                    <p class="data first"><span id="current4"></span></p>
+                    <p class="label">High: </p>
+                    <p class="data"><span id="hightemp4"></span>&deg; F</p>
+                    <p class="label">Wind Chill: </p>
+                    <p class="data"><span id="windchill4"></span>&deg; F</p>
+                    <p class="label">Humidity: </p>
+                    <p class="data"><span id="humidity4"></span>%</p>
+                    <p class="label last">Wind Speed: </p>
+                    <p class="data"><span class="last" id="windspeed4"></span> mph</p>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy;2019 Temple Inn & Suites | <a class="sources" href="sources.html">Attributions</a> | Designed by Aspie
@@ -199,5 +305,6 @@
     <script src="js/currentdate.js"></script>
     <script src="js/templeclosures.js"></script>
     <script src="js/weatherdata.js"></script>
+    <script src="js/collapsibles.js"></script>
 
 </body>

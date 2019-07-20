@@ -3,9 +3,6 @@
     h1 {
         font-size: 3rem;
     }
-    .motto {
-        font-size: 1.2rem;
-    }
     header {
         margin-bottom: 25px;
     }
@@ -15,13 +12,18 @@
         margin-top: -75px;
     }
     /*****Gallery*****/
-    .imagegallery {
+    .templegallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .shadow:hover {
-        box-shadow: 0 0 50px #0e6096;
+    .templename {
+        font-size: 2.5em;
     }
     /*****Main Page*****/
+    #featuretitle {
+        text-align: left;
+    }
+
+    /*
     .townshome h4 {
         font-size: .85em;
     }
@@ -36,7 +38,7 @@
       .text {
         width: 97%;
       }
-
+    */
 
 
 

@@ -31,34 +31,31 @@
     }
 
     /*****Main*****/
-
-
     #featuretitle {
-        text-align: left;
-        font-size: 2.2em;
+        font-size: 2.3em;
+        flex-flow: nowrap;
     }
-
-
-
+    .featureimg {
+        margin: 5px;
+    }
+    .featrightcol {
+        font-size: 1em;  
+    }
     .slideshow-container {
         max-width: 600px;
 
-      }
-      .text {
+    }
+    .text {
         width: 96%;
-      }
+    }
+    .templename {
+        font-size: 2.2em;
+        text-align: center;
+    }
+    .templegallery {
+        grid-template-columns: 1fr 1fr;
+        }
 
-    /*****Article*****/
-    .main-article {
-        display: inline-block;
-    }
-    .articleimg, .featureimg {
-        float: right;
-        margin-top: 10px;
-        margin-right: 10px;
-        width: 33%;
-        padding: 5px;
-    }
     /*****Contact*****/
     .map {
         padding: 10px;

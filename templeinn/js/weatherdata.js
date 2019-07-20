@@ -8,7 +8,7 @@ weatherRequest.open('Get', apiURLstring, true);
 weatherRequest.send();
 weatherRequest.onload = function() {
     let weatherData = JSON.parse(weatherRequest.responseText);
-    document.getElementById('currenttemp').innerHTML = weatherData.weather[0].description;
+    document.getElementById('current').innerHTML = weatherData.weather[0].description;
     document.getElementById('hightemp').innerHTML = weatherData.main.temp_max.toFixed();
     document.getElementById('windchill').innerHTML = windChill(weatherData.main.temp_max, weatherData.wind.speed).toFixed();
     document.getElementById('humidity').innerHTML= weatherData.main.humidity.toFixed();
@@ -21,7 +21,7 @@ weatherRequest2.open('Get', apiURLstring2, true);
 weatherRequest2.send();
 weatherRequest2.onload = function() {
     let weatherData = JSON.parse(weatherRequest2.responseText);
-    document.getElementById('currenttemp2').innerHTML = weatherData.weather[0].description;
+    document.getElementById('current2').innerHTML = weatherData.weather[0].description;
     document.getElementById('hightemp2').innerHTML = weatherData.main.temp_max.toFixed();
     document.getElementById('windchill2').innerHTML = windChill(weatherData.main.temp_max, weatherData.wind.speed).toFixed();
     document.getElementById('humidity2').innerHTML= weatherData.main.humidity.toFixed();
@@ -35,7 +35,7 @@ weatherRequest3.open('Get', apiURLstring3, true);
 weatherRequest3.send();
 weatherRequest3.onload = function() {
     let weatherData = JSON.parse(weatherRequest3.responseText);
-    document.getElementById('currenttemp3').innerHTML = weatherData.weather[0].description;
+    document.getElementById('current3').innerHTML = weatherData.weather[0].description;
     document.getElementById('hightemp3').innerHTML = weatherData.main.temp_max.toFixed();
     document.getElementById('windchill3').innerHTML = windChill(weatherData.main.temp_max, weatherData.wind.speed).toFixed();
     document.getElementById('humidity3').innerHTML= weatherData.main.humidity.toFixed();
@@ -48,7 +48,7 @@ weatherRequest4.open('Get', apiURLstring4, true);
 weatherRequest4.send();
 weatherRequest4.onload = function() {
     let weatherData = JSON.parse(weatherRequest4.responseText);
-    document.getElementById('currenttemp4').innerHTML = weatherData.weather[0].description;
+    document.getElementById('current4').innerHTML = weatherData.weather[0].description;
     document.getElementById('hightemp4').innerHTML = weatherData.main.temp_max.toFixed();
     document.getElementById('windchill4').innerHTML = windChill(weatherData.main.temp_max, weatherData.wind.speed).toFixed();
     document.getElementById('humidity4').innerHTML= weatherData.main.humidity.toFixed();
