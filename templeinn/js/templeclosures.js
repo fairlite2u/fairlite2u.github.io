@@ -90,7 +90,7 @@ request.onload = function() {
         }
     };
     for (let i = 0; i < temples.length; i++) {
-        if (temples[i].name == "") {
+        if (temples[i].name == "San Diego California Temple") {
             let templeclosures = temples[i].closures;
             let numclosures = 0; 
             for (let e = 0; e < templeclosures.length; e++) {
