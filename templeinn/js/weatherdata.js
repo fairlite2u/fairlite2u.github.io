@@ -69,7 +69,7 @@ weatherRequest5.onload = function() {
 }
 
 let weatherRequest6 = new XMLHttpRequest();
-let apiURLstring6 = 'https://api.openweathermap.org/data/2.5/weather?id=5844096&units=imperial&APPID=ff571c48af1923ac4fbdf7523b913171';
+let apiURLstring6 = 'https://api.openweathermap.org/data/2.5/weather?id=5391811&units=imperial&APPID=ff571c48af1923ac4fbdf7523b913171';
 weatherRequest6.open('Get', apiURLstring6, true);
 weatherRequest6.send();
 weatherRequest6.onload = function() {
