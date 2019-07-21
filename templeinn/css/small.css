@@ -243,6 +243,10 @@ main {
 
 
 /*****Temples Page*****/
+#temphead {
+    text-align: center;
+}
+
 .templeinfo {
     background-color: #223f64;
     color: #e6cd75;
