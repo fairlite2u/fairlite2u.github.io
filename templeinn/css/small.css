@@ -8,7 +8,7 @@
 body {
     font-size: 1em;
     background-color: #d7d7d7;
-    color: #172a3a;
+    color: #132337;
     font-family: 'Lato', sans-serif;
 }
 
@@ -277,13 +277,13 @@ main {
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
     background-color: #8fabc7;
-    color: #223f64;
     cursor: pointer;
     padding: 8px;
     width: 100%;
     text-align: left;
     outline: none;
     font-size: 15px;
+    font-weight: bold;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -294,7 +294,6 @@ main {
 
 .collapsible:after {
     content: '\002B';
-    color: #223f64;
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -311,7 +310,7 @@ main {
     overflow: hidden;
     transition: max-height .02s ease-out;
     background-color: #8fabc7;
-    color: #223f64;
+    color: #132337;
 }
 
 .summary {
