@@ -45,6 +45,11 @@
     .featrightcol {
         font-size: 1em;
     }
+    .pictures {
+        background-color: #223f64;
+        padding: 20px 0 10px;
+        border: 2px solid #8fabc7;
+    }
 
     .slideshow-container {
         max-width: 600px;
