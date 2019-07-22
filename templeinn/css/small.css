@@ -1,5 +1,4 @@
 /* main css custom file */
-
 * {
     margin: 0;
     padding: 0;
@@ -48,7 +47,7 @@ header {
     margin: 0 auto;
     background-color: #336699;
     color: #f5f5f5;
-    border: 1px solid #223f64;
+    border: 2px solid #223f64;
 
 }
 
@@ -123,7 +122,7 @@ main {
     text-align: center;
 }
 
-#submitbutton {
+.submitbutton {
     border: none;
     background-color: #223f64;
     color: #b4c7d9;
@@ -154,10 +153,12 @@ main {
     flex-flow: row wrap;
     align-items: center;
 }
+
 .featleftcol {
-    padding-left: 20px;  
+    padding-left: 20px;
     margin: 0 auto;
 }
+
 .featrightcol {
     line-height: 1.25rem;
     margin: 0 auto;
@@ -176,6 +177,7 @@ main {
     max-width: 400px;
     position: relative;
     margin: 10px auto;
+    border: 2px solid #223f64;
 }
 
 .text {
@@ -184,7 +186,7 @@ main {
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 12px;
+    bottom: 1px;
     width: 94%;
     text-align: center;
 }
@@ -218,29 +220,17 @@ main {
     margin: 10px auto;
     padding: 5px;
     background-color: #8fabc7;
-}
-
-.icons {
-    width: 50px;
-    padding: 10px;
-}
-
-.map {
-    width: 100%;
-}
-
-
-.contact {
+    border: 2px solid #223f64;
     display: flex;
     flex-flow: row wrap;
 }
+
 
 .leftcol,
 .rightcol {
     width: 99%;
     text-align: center;
 }
-
 
 /*****Temples Page*****/
 #temphead {
@@ -259,6 +249,7 @@ main {
     grid-gap: .5rem;
     padding: 10px;
 }
+
 .templeinfo img {
     width: 100%;
 
@@ -274,7 +265,7 @@ main {
     padding: 5px;
 }
 
-/* Style the button that is used to open and close the collapsible content */
+/* Collapsible content */
 .collapsible {
     background-color: #8fabc7;
     cursor: pointer;
@@ -286,7 +277,6 @@ main {
     font-weight: bold;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .open,
 .collapsible:hover {
     background-color: #ccc;
@@ -303,7 +293,6 @@ main {
     content: "\2212";
 }
 
-/* Style the collapsible content. Note: hidden by default */
 .content {
     padding: 0 8px;
     max-height: 0;
@@ -318,38 +307,93 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 .label {
     text-align: right;
     padding-right: .5rem;
 }
+
 .first {
     padding-top: .75rem;
 }
+
 .last {
     padding-bottom: .75rem;
 }
 
-/*.imagegallery img {
-    width: 100%;
-    height: auto;
+/*****Reservations Page*****/
+
+.resbox {
+    margin: 12px 0;
 }
-*/
+
+.resbox legend {
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+#legendsub {
+    padding: 0 0 5px;
+}
+.ressubhead {
+    padding: 0 15px;
+}
+
+.resinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.userinput {
+    margin-top: 2px;
+}
+
+.resinfo label.right {
+    text-align: left;
+    padding-right: 0;
+    padding-left: 0;
+}
 
 
+.resinfo label {
+    flex: none;
+    display: block;
+    width: 130px;
+    font-weight: bold;
+    font-size: 1em;
+}
 
+.userinput {
+    margin-bottom: 10px;
+    margin-right: 8px;
+    padding: 4px;
+}
+
+.commentbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentbox>textarea {
+    flex: 1;
+}
+
+/*****Contact Page*****/
+.contactpage {
+    margin: 0 auto;
+}
 
 /*****Footer*****/
 footer {
     margin: 10px auto;
     background-color: #336699;
     color: #f5f5f5;
-    border: 1px solid #223f64;
+    border: 2px solid #223f64;
     text-align: center;
     font-size: .7em;
 }
 
 .sources {
-    color: #e6cd75;
+    color: #d1f4fa;
     text-decoration: none;
 }
 

@@ -1,4 +1,5 @@
 @media only screen and (min-width: 32.5em) {
+
     /*****header*****/
     header {
         width: 100%;
@@ -6,9 +7,11 @@
         height: 100px;
 
     }
+
     h1 {
         font-size: 2.6rem;
     }
+
     .logohead {
 
         width: 150px;
@@ -19,11 +22,10 @@
     }
 
     /*****navigation******/
-
-
     .navigation li:first-child {
         display: none;
     }
+
     .navigation li {
         display: inline-block;
         margin-right: .75rem;
@@ -35,44 +37,61 @@
         font-size: 2.3em;
         flex-flow: nowrap;
     }
+
     .featureimg {
         margin: 5px;
     }
+
     .featrightcol {
-        font-size: 1em;  
+        font-size: 1em;
     }
+
     .slideshow-container {
         max-width: 600px;
 
     }
+
     .text {
         width: 96%;
     }
+
     .templename {
         font-size: 2.2em;
         text-align: center;
     }
+
     .templegallery {
         grid-template-columns: 1fr 1fr;
-        }
+    }
+
+    /*****Reservations*****/
+    .resinfo {
+        flex-direction: row;
+    }
+
+    .resinfo label.right {
+        text-align: right;
+        padding-right: 8px;
+        padding-left: 10px;
+        width: auto;
+    }
+    .userinput {
+        flex: 1 1 auto;
+        display: block;
+        margin-top: -4px;
+      }
+      
 
     /*****Contact*****/
-    .map {
-        padding: 10px;
-    }
-    .contact {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-    }
-    .leftcol, .rightcol {
+    .leftcol,
+    .rightcol {
         width: 48%;
         flex: 1 0 15em;
         margin: 1.5em;
-      }
+    }
 
     /*****Footer*****/
-        footer {
+    footer {
         margin: 20px auto;
         font-size: 1em;
     }
