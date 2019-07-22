@@ -42,7 +42,8 @@
                 <p>Don't delay booking your reservation.</p>
                 <p>Rooms fill up fast during the summer travel season.</p>
                 <form method="GET" action="reservations.html" name="calltoaction">
-                    <input type="submit" name="buttonsubmit" class="submitbutton" id="ctabutton" value="Check Availability Now">
+                    <input type="submit" name="buttonsubmit" class="submitbutton" id="ctabutton"
+                        value="Check Availability Now">
                 </form>
             </div>
         </div>
@@ -70,58 +71,60 @@
                 </div>
             </article>
         </section>
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 4</div>
-                <picture class="sspic">
-                    <source media="(max-width: 32.5em)" srcset="images/freibergtemple.jpg">
-                    <source media="(max-width: 64em)" srcset="images/freibergmedium.jpg">
-                    <source media="(min-width: 64.01em)" srcset="images/freiberglarge.jpg">
-                    <img src="images/freibergtemple.jpg" alt="Frieberg Germany Temple photo">
-                </picture>
-                <div class="text">Freiberg Germany Temple</div>
+        <section class="pictures">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <picture class="sspic">
+                        <source media="(max-width: 32.5em)" srcset="images/freibergtemple.jpg">
+                        <source media="(max-width: 64em)" srcset="images/freibergmedium.jpg">
+                        <source media="(min-width: 64.01em)" srcset="images/freiberglarge.jpg">
+                        <img src="images/freibergtemple.jpg" alt="Frieberg Germany Temple photo">
+                    </picture>
+                    <div class="text">Freiberg Germany Temple</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <picture class="sspic">
+                        <source media="(max-width: 32.5em)" srcset="images/latemple.jpg">
+                        <source media="(max-width: 64em)" srcset="images/lamedium.jpg">
+                        <source media="(min-width: 64.01em)" srcset="images/lalarge.jpg">
+                        <img src="images/latemple.jpg" alt="Los Angeles California Temple photo">
+                    </picture>
+                    <div class="text">Los Angeles California Temple</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <picture class="sspic">
+                        <source media="(max-width: 32.5em)" srcset="images/mttimptemple.jpg">
+                        <source media="(max-width: 64em)" srcset="images/mttimpmedium.jpg">
+                        <source media="(min-width: 64.01em)" srcset="images/mttimplarge.jpg">
+                        <img src="images/mttimptemple.jpg" alt="Mount Timpanogos Utah Temple photo">
+                    </picture>
+                    <div class="text">Mount Timpanogos Utah Temple</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <picture class="sspic">
+                        <source media="(max-width: 32.5em)" srcset="images/washdctemple.jpg">
+                        <source media="(max-width: 64em)" srcset="images/washdcmedium.jpg">
+                        <source media="(min-width: 64.01em)" srcset="images/washdclarge.jpg">
+                        <img src="images/washdctemple.jpg" alt="Washington D.C. Temple photo">
+                    </picture>
+                    <div class="text">Washington D.C. Temple</div>
+                </div>
             </div>
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 4</div>
-                <picture class="sspic">
-                    <source media="(max-width: 32.5em)" srcset="images/latemple.jpg">
-                    <source media="(max-width: 64em)" srcset="images/lamedium.jpg">
-                    <source media="(min-width: 64.01em)" srcset="images/lalarge.jpg">
-                    <img src="images/latemple.jpg" alt="Los Angeles California Temple photo">
-                </picture>
-                <div class="text">Los Angeles California Temple</div>
+            <br>
+            <!-- The dots -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 4</div>
-                <picture class="sspic">
-                    <source media="(max-width: 32.5em)" srcset="images/mttimptemple.jpg">
-                    <source media="(max-width: 64em)" srcset="images/mttimpmedium.jpg">
-                    <source media="(min-width: 64.01em)" srcset="images/mttimplarge.jpg">
-                    <img src="images/mttimptemple.jpg" alt="Mount Timpanogos Utah Temple photo">
-                </picture>
-                <div class="text">Mount Timpanogos Utah Temple</div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 4</div>
-                <picture class="sspic">
-                    <source media="(max-width: 32.5em)" srcset="images/washdctemple.jpg">
-                    <source media="(max-width: 64em)" srcset="images/washdcmedium.jpg">
-                    <source media="(min-width: 64.01em)" srcset="images/washdclarge.jpg">
-                    <img src="images/washdctemple.jpg" alt="Washington D.C. Temple photo">
-                </picture>
-                <div class="text">Washington D.C. Temple</div>
-            </div>
-        </div>
-        <br>
-        <!-- The dots -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-        </div>
+        </section>
         <section class="contact">
             <div class="leftcol">
                 <h4>Corporate Headquarters</h4>
