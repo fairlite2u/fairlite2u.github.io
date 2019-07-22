@@ -180,11 +180,10 @@ main {
 }
 
 .slideshow-container {
-    width: 100%;
+    max-width: 375px;
     position: relative;
     margin: 20px auto 0;
     border: 2px solid #223f64;
-}
 
 .text {
     color: #223f64;
