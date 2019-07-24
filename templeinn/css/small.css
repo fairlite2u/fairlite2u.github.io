@@ -20,16 +20,12 @@ h6 {
     font-family: 'Tangerine', sans-serif;
 
 }
-h1 {
+h1, h2 {
     font-size: 3em;
     margin-top: 5px;
     text-align: center;
 }
 
-h2 {
-    font-size: 3em;
-    text-align: center;
-}
 
 h4 {
     font-size: 2em;
