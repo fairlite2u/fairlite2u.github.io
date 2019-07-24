@@ -98,26 +98,26 @@
           <fieldset class="guestbox">
             <legend>Guest Information</legend>
             <div class="resinfo">
-              <label>First Name</label>
-              <input type="text" name="firstname" required pattern="[A-Za-z]{5, }" class="userinput">
+              <label for="firstname">First Name</label>
+              <input type="text" name="firstname" required pattern="[A-Za-z]{5, }" class="userinput" id="firstname">
             </div>
             <div class="resinfo">
-              <label>Last Name</label>
-              <input type="text" name="lastname" required pattern="[A-Za-z]{5, }" class="userinput">
+              <label for="lastname">Last Name</label>
+              <input type="text" name="lastname" required pattern="[A-Za-z]{5, }" class="userinput" id="lastname">
             </div>
 
             <div class="resinfo">
-              <label>Email Address</label>
+              <label for="email">Email Address</label>
               <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                placeholder="bookings@templeinnandsuites.com" required class="userinput">
+                placeholder="bookings@templeinnandsuites.com" required class="userinput" id="email">
             </div>
             <div class="resinfo">
-              <label class="guestinfo">Phone Number</label>
-              <input type="tel" name="phone" required placeholder="1235556789" class="userinput">
+              <label class="guestinfo" for="phone">Phone Number</label>
+              <input type="tel" name="phone" required placeholder="1235556789" class="userinput" id="phone">
             </div>
             <div class="resinfo">
-              <label>State</label>
-              <select name="state" required class="userinput">
+              <label for="state">State</label>
+              <select name="state" required class="userinput" id="state">
                 <option value="" selected disabled>Select State or Territory...</option>
                 <option value="Not Applicable">Not Applicable</option>
                 <option value="Alabama">Alabama</option>
@@ -178,8 +178,8 @@
               </select>
             </div>
             <div class="resinfo">
-              <label class="guestinfo">Country</label>
-              <select name="country" required class="userinput">
+              <label for="country">Country</label>
+              <select name="country" required class="userinput" id="country">
                 <option value="" selected disabled>Select Country...</option>
                 <option value="United States">United States</option>
                 <option value="United Kingdom">United Kingdom</option>
@@ -433,8 +433,9 @@
         <div>
           <fieldset class="commentbox">
             <legend>Special Accommodations/Comments: </legend>
-            <h3 id="legendsub">(Optional)</h3>
+
             <div class="resinfo">
+                <label id="legendsub" for="addinfo">(Optional)</label>
               <textarea name="addinfo" id="addinfo" rows="5"></textarea>
             </div>
           </fieldset>
