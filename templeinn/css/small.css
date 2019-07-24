@@ -126,7 +126,7 @@ main {
     border: none;
     background-color: #223f64;
     color: #b4c7d9;
-    border-radius: 1rem;
+    border-radius: .2rem;
     padding: .75rem 1.5rem;
     margin: 1rem 0 0 2%;
     width: 100%;
@@ -239,7 +239,7 @@ main {
 .templeinfo {
     background-color: #223f64;
     color: #e6cd75;
-    border: 1px solid #223f64;
+    border: 2px solid #223f64;
 }
 
 .templegallery {
@@ -321,38 +321,62 @@ main {
 }
 
 /*****Reservations Page*****/
+#bookbox {
+    background-color: #8fabc7;
+    border: 2px solid #223f64;
+    padding: 10px;
+    margin: 0 auto;
 
-.resbox {
-    margin: 12px 0;
+}
+#bookflex {
+    display: flex;
+    flex-direction: column;
 }
 
-.resbox legend {
+.resbox, .guestbox {
+    margin: 20px;
+    border-color: #336699;
+    flex-grow: 1;
+}
+.commentbox {
+    border-color: #336699;
+    margin: 0 20px;
+}
+.commentbox textarea {
+    width: 100%;
+}
+.resbox legend, .guestbox legend, .commentbox legend{
     font-weight: bold;
     font-size: 1.15rem;
 }
+
+.resbox input, .guestbox input {
+    width: 97%;
+}
+
+.resbox select, .guestbox select {
+    width: 100%;
+}
+
 #legendsub {
     padding: 0 0 5px;
 }
 .ressubhead {
     padding: 0 15px;
+    margin: 10px 20px 0px;
 }
 
-.resinfo {
-    display: flex;
-    flex-direction: column;
+.resinfo label{
+    margin: 20px 0 8px;
+}
+.resinfo input, .resinfo select, .resinfo textarea {
+    border-radius: .2rem;
+    background-color: #d7d7d7;
 }
 
 .userinput {
     margin-top: 2px;
 }
-
-.resinfo label.right {
-    text-align: left;
-    padding-right: 0;
-    padding-left: 0;
-}
-
-
 .resinfo label {
     flex: none;
     display: block;
@@ -367,18 +391,37 @@ main {
     padding: 4px;
 }
 
-.commentbox {
-    display: flex;
-    flex-direction: column;
+#resbutton {
+    text-align: center;
 }
-
-.commentbox>textarea {
-    flex: 1;
-}
-
 /*****Contact Page*****/
 .contactpage {
     margin: 0 auto;
+}
+.contactform {
+    max-width: 500px;
+    padding: 50px;
+    color: #E6CD75;
+    border: 2px solid #223f64;
+    background-color: #223f64;
+} 
+#contactname, #contactemail, #contactsubject, #contactmessage {
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: .2rem;
+}
+.contactbutton {
+    border: none;
+    background-color: #8fabc7;
+    color: #223f64;
+    padding: .75rem 1.5rem;
+    border-radius: .2rem;
+    margin: 1rem 0 0 2%;
+    width: 100%;
+    max-width: 250px;
+}
+#conbutton {
     text-align: center;
 }
 

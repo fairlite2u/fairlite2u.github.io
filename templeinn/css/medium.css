@@ -60,16 +60,11 @@
     }
 
     /*****Reservations*****/
-    .resinfo {
+    #bookflex {
         flex-direction: row;
+        flex-wrap: wrap;
     }
 
-    .resinfo label.right {
-        text-align: right;
-        padding-right: 8px;
-        padding-left: 10px;
-        width: auto;
-    }
     .userinput {
         flex: 1 1 auto;
         display: block;
