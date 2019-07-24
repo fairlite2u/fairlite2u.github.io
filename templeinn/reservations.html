@@ -45,7 +45,7 @@
             <legend>Stay Information</legend>
             <div class="resinfo">
               <label class="bookinginfo" id="location" for="location">Location</label>
-              <select name="location" class="userinput" required>
+              <select name="location" class="userinput" id="location" required>
                 <option value="" selected disabled>Select Temple...</option>
                 <option value="freiberg">Freiberg Germany</option>
                 <option value="losangeles">Los Angeles California</option>
@@ -57,15 +57,15 @@
             </div>
             <div class="resinfo">
               <label class="bookinginfo" for="checkin">Check-in Date</label>
-              <input type="date" name="checkindate" class="userinput" required>
+              <input type="date" name="checkindate" class="userinput" id="checkin" required>
             </div>
             <div class="resinfo">
               <label class="bookinginfo" for="checkout">Check-out Date</label>
-              <input type="date" name="checkoutdate" class="userinput" required>
+              <input type="date" name="checkoutdate" class="userinput" id="checkout" required>
             </div>
             <div class="resinfo">
               <label class="bookinginfo" for="roomtype">Room Type</label>
-              <select name="roomtype" class="userinput" required>
+              <select name="roomtype" class="userinput" id="roomtype" required>
                 <option value="" selected disabled>Select Room Type...</option>
                 <option value="king">1 King Bed</option>
                 <option value="kingacc">1 King Bed, Accessible</option>
@@ -79,7 +79,7 @@
             </div>
             <div class="resinfo">
               <label class="bookinginfo" for="numrooms">Number of Rooms</label>
-              <select class="userinput" required>
+              <select class="userinput" id="numrooms" required>
                 <option value="" disabled>Select Numbers of Rooms...</option>
                 <option value="1" selected>1</option>
                 <option value="2">2</option>
