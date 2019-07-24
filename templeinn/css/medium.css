@@ -82,6 +82,13 @@
         margin: 1.5em;
     }
 
+    .leftcol,
+    .rightcol {
+        width: 48%;
+        flex: 1 0 15em;
+        margin: 1.5em;
+    }
+
     /*****Footer*****/
     footer {
         margin: 20px auto;
