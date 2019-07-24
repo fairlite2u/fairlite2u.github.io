@@ -72,19 +72,11 @@
       }  
 
     /*****Contact*****/
-    .leftcol,
-    .rightcol {
-        width: 48%;
-        flex: 1 0 15em;
-        margin: 1.5em;
+    .row {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-
-    .column {
-        float: left;
-        width: 44%;
-        margin-top: 6px;
-    }
     /*****Footer*****/
     footer {
         margin: 20px auto;

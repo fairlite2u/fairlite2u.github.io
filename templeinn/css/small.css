@@ -400,13 +400,23 @@ main {
     text-align: center;
 }
 /*****Contact Page*****/
-.contactbox {
-    box-sizing: border-box;
-}
 .contactpage {
     background-color: #8fabc7;
-    padding: 8px;
+    border: 2px solid #223f64;
+    padding: 10px;
+    margin: 0 auto;
 }
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.address, .contactform {
+    margin: 20px;
+    border-color: #336699;
+    flex-grow: 1;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -424,20 +434,10 @@ main {
     height: 100%;
 }
 
-.column {
-    float: left;
-    width: 85%;
-    margin-top: 0;
-    padding: 20px;
-}
 .address {
     text-align: center;
 }
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
 .contactform {
     padding: 24px;
     color: #E6CD75;
@@ -450,6 +450,7 @@ main {
     padding: 5px;
     border-radius: .2rem;
     resize: vertical;
+    background-color: #d7d7d7;
 }
 .contactbutton {
     border: none;
