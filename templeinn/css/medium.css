@@ -76,6 +76,11 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
+    .column {
+        width: 48%;
+        flex: 1 0 15em;
+        margin: 1.5em;
+    }
 
     /*****Footer*****/
     footer {

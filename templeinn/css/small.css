@@ -414,7 +414,6 @@ main {
 .address, .contactform {
     margin: 20px;
     border-color: #336699;
-    flex-grow: 1;
 }
 
 .bold {
