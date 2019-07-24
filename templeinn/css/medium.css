@@ -79,6 +79,12 @@
         margin: 1.5em;
     }
 
+
+    .column {
+        float: left;
+        width: 44%;
+        margin-top: 6px;
+    }
     /*****Footer*****/
     footer {
         margin: 20px auto;

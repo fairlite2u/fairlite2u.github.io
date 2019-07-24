@@ -230,7 +230,6 @@ main {
     flex-flow: row wrap;
 }
 
-
 .leftcol,
 .rightcol {
     width: 99%;
@@ -401,12 +400,46 @@ main {
     text-align: center;
 }
 /*****Contact Page*****/
+.contactbox {
+    box-sizing: border-box;
+}
 .contactpage {
-    margin: 0 auto;
+    background-color: #8fabc7;
+    padding: 8px;
+}
+.bold {
+    font-weight: bold;
+}
+.mapsize {
+    position:relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+.mapsize iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.column {
+    float: left;
+    width: 85%;
+    margin-top: 0;
+    padding: 20px;
+}
+.address {
+    text-align: center;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 .contactform {
-    max-width: 500px;
-    padding: 50px;
+    padding: 24px;
     color: #E6CD75;
     border: 2px solid #223f64;
     background-color: #223f64;
@@ -416,6 +449,7 @@ main {
     margin: 10px 0;
     padding: 5px;
     border-radius: .2rem;
+    resize: vertical;
 }
 .contactbutton {
     border: none;
@@ -430,6 +464,14 @@ main {
 #conbutton {
     text-align: center;
 }
+/*****Thanks, Booking page*****/
+.responsepage {
+    text-align: center;
+}
+.responsepage a {
+    color: #336699;
+}
+
 
 /*****Footer*****/
 footer {
