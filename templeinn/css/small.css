@@ -476,7 +476,20 @@ main {
     background: #223f64;
     color: #e6cd75;
 }
-
+.missionpage {
+    background-color: #8fabc7;
+    border: 2px solid #223f64;
+    padding: 10px;
+    margin: 0 auto;
+}
+.missionpage .numbertext {
+    color: #223f64;
+}
+.roomslideshow-container {
+    max-width: 400px;
+    position: relative;
+    margin: 0 auto;
+}
 
 /*****Contact Page*****/
 .contactpage {
