@@ -1,7 +1,7 @@
 @media only screen and (min-width: 64em) {
     /*****header*****/
     h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     header {
         margin-bottom: 25px;
@@ -22,10 +22,13 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
     .templename {
-        font-size: 3em;
+        font-size: 3rem;
     }
     /*****Main Page*****/
     #featuretitle {
         text-align: left;
+    }
+    #featuredhead {
+        font-size: 3.5rem;
     }
 }
