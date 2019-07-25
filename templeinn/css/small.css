@@ -415,20 +415,20 @@ main {
     text-align: center;
 }
 
-/*****Services Page*****/
+/*****Services Pages*****/
 #specialbox,
-#amenitiesbox, #subpages {
+#amenitiesbox, #subpages, #banquetbox, #foodbox {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     margin: 20px auto;
 }
 
-#specialbox, #subpages {
+#specialbox, #subpages, #banquetbox {
     background-color: #8fabc7;
 }
 
-#amenitiesbox {
+#amenitiesbox, #foodbox {
     background-color: #223f64;
 }
 
@@ -451,12 +451,12 @@ main {
 }
 
 .picleftcol,
-.picrightcol {
+.picrightcol, .subpic {
     margin: .5em;
 }
 
 #specialimg,
-#amenitiesimg, #receptionimg, #weddingimg {
+#amenitiesimg, #receptionimg, #weddingimg, #banquetimg, #foodimg {
     width: 100%;
 }
 
@@ -467,8 +467,15 @@ main {
     margin: .4em;
 }
 
-
-
+.sublink {
+    color: #223f64;
+    font-weight: bold;
+    padding: 4px;
+}
+.sublink:hover {
+    background: #223f64;
+    color: #e6cd75;
+}
 
 
 /*****Contact Page*****/
