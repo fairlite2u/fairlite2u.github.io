@@ -478,9 +478,11 @@ main {
 }
 .missionpage {
     background-color: #8fabc7;
-    border: 2px solid #223f64;
-    padding: 10px;
     margin: 0 auto;
+}
+.smallcenter {
+    padding: 12px;
+    text-align: center;
 }
 .missionpage .numbertext {
     color: #223f64;
