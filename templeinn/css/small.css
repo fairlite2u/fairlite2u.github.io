@@ -135,7 +135,7 @@ main {
     color: #b4c7d9;
     border-radius: .2rem;
     padding: .75rem 1.5rem;
-    margin: 1rem 0 0 2%;
+    margin: 1rem 0 0;
     width: 100%;
     max-width: 250px;
 }
@@ -456,7 +456,7 @@ main {
 }
 
 #specialimg,
-#amenitiesimg {
+#amenitiesimg, #receptionimg, #weddingimg {
     width: 100%;
 }
 
