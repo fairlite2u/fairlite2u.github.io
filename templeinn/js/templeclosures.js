@@ -13,7 +13,6 @@ request.onload = function() {
     let output4 = document.querySelector('.closurebox4');
     let output5 = document.querySelector('.closurebox5');
     let output6 = document.querySelector('.closurebox6');
-    console.log(templedata);
     for (let i = 0; i < temples.length; i++) {
         if (temples[i].name == "Los Angeles California Temple") {
             let templeclosures = temples[i].closures;
