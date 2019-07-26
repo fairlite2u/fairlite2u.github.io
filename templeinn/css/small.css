@@ -120,6 +120,7 @@ main {
 }
 #introhead {
     padding: 25px;
+    line-height: 1em;
 }
 
 /* Call to action */
