@@ -110,6 +110,17 @@ main {
     max-width: 1025px;
     margin: 0 auto;
 }
+.introbox {
+    background-color: #223f64;
+    color: #E6CD75;
+    padding: 30px;
+    line-height: 1.25em;
+    margin-bottom: 20px;
+    border: 2px solid #e6cd75;
+}
+#introhead {
+    padding: 25px;
+}
 
 /* Call to action */
 #cta {
