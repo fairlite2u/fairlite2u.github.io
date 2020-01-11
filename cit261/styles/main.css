@@ -86,6 +86,9 @@ ul {
 hr {
     width: 90%;
 }
+section {
+    text-align: center;
+}
 footer {
     font-size: 12px;
 }
