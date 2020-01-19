@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id=user_input></input>
+    <button onclick="loadUserInput()">Show it</button>
+    <div id="insertHere"></div>
+</body>
+
+<script>
+    function loadUserInput(){
+        const response = document.getElementById("user_input").value;
+        document.getElementById("insertHere").innerHTML = response;
+    }
+    function addNumber(num){
+        const response = int(document.getElementById("user_input").value);
+        for(let i = response; i > 0; i--){
+            i +=1
+        }
+        return i
+    }
+</script>
+</html>
