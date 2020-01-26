@@ -1,3 +1,5 @@
+alert('Welcome to Quiz Ninja!');
+
 // Create an array that contains the questions and the answers in key pairs
 // Use const because the array won't change
 const quiz = [
