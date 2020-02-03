@@ -1,9 +1,3 @@
-/* Something isn't quite working right. The start button doesn't click. 
-I need to explore more, but it doesn't quite match the functionality 
-of the codepen.
-*/
-
-
 // This part stays the same as the previous version
 const quiz = [
     { name: "Superman",realName: "Clark Kent" },
@@ -46,8 +40,8 @@ const game = {
     // modify the functions to be methods inside the object
     start(quiz){
         // the 'this' keyword refers to the object that is within
-        this.questions = [...quiz];
         this.score = 0;
+        this.questions = [...quiz];
         // Add the call to the hide function to hide the start button
         view.hide(view.start);        
         // main game loop
@@ -57,7 +51,6 @@ const game = {
             this.ask();
         }
         // end of main game loop
-        // call game over function
         this.gameOver();
     },
     ask(){
@@ -76,7 +69,8 @@ const game = {
         this.score++;
         // the render function is inserted here to update the score as needed
         view.render(view.score,this.score);
-        } else {
+        } 
+        else {
         // the call to the render function will replace the alert dialog        
         view.render(view.result,`Wrong! The correct answer was ${answer}`,{'class':'wrong'});
         alert(`Wrong! The correct answer was ${answer}`);
