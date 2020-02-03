@@ -9,6 +9,7 @@
 </head>
 <body onload="clearBoard()">
     <div id="win"></div>
+    <!-- Use table to create player boxes at top and then a 3x3 playing board-->
     <table class="player">
         <tr>
             <td id="p1">Player 1</td>
@@ -33,6 +34,7 @@
         </tr>
         <tr>
             <td id="ten">
+                <!-- Reset button to call js to clear board -->
                 <button type="reset" onclick="clearBoard()">Reset Game</button>
             </td>
         </tr>

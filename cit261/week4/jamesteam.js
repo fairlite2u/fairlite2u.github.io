@@ -1,6 +1,7 @@
 let player = 1;
 
 function clearBoard() {
+    // This function is designed to clear the board at the end of the game
     player = 1;
     document.getElementById('p1').style.backgroundColor = "lightgray";
     document.getElementById('p2').style.backgroundColor = "darkgray";
@@ -14,6 +15,7 @@ function clearBoard() {
 }
 
 function switchPlayer() {
+    // This function switches the turns between the two players
     if(player == 1){
         player = 2;
         document.getElementById('p2').style.backgroundColor = "lightgray";
@@ -27,6 +29,7 @@ function switchPlayer() {
 }
 
 function placeMark(idName) {
+    // This function places an x or an o, depending on which player's turn it is
     if(player == 1 && document.getElementById(idName).value == 0){
         document.getElementById(idName).innerHTML = "X";
         document.getElementById(idName).value = "X";
@@ -47,6 +50,8 @@ function placeMark(idName) {
 }
 
 function checkForWin() {
+    // This functions checks to see which player won
+    // These get the values from each space and store them
     const a = document.getElementById("s1").value;
     const b = document.getElementById("s2").value;
     const c = document.getElementById("s3").value;
@@ -56,7 +61,7 @@ function checkForWin() {
     const g = document.getElementById("s7").value;
     const h = document.getElementById("s8").value;
     const i = document.getElementById("s9").value;
-    
+    // if statements to figure out if all the squares in a row or column or diagonal are the same (all x or all o)
     if(a != 0 && a == b && a == c) {
         document.getElementById("win").innerHTML = "Player " + player + " wins!";
         document.getElementById("s1").style.backgroundColor = "green";
@@ -129,6 +134,7 @@ function checkForWin() {
         document.getElementById("s7").style.backgroundColor = "green";
         document.getElementById("s7").style.color = "white";
     }
+    // No one wins
     else if(
         document.getElementById("s1").value != 0 &&
         document.getElementById("s2").value != 0 &&
