@@ -1,14 +1,8 @@
-// Add more questions!
+// This part stays the same as the previous version
 const quiz = [
-    { name: "Superman",realName: "Clark Kent"},
-    { name: "Wonder Woman",realName: "Diana Prince"},
-    { name: "Batman",realName: "Bruce Wayne"},
-    { name: "The Hulk",realName: "Bruce Banner"},
-    { name: "Spider-man",realName: "Peter Parker"},
-    { name: "Cyclops",realName: "Scott Summers"},
-    { name: "Star-Lord",realName: "Peter Quill"},
-    { name: "Black Widow", realName: "Natasha Romanoff"},
-    { name: "Scarlet Witch", realName: "Wanda Maximoff"}
+    { name: "Superman",realName: "Clark Kent" },
+    { name: "Wonder Woman",realName: "Diana Prince" },
+    { name: "Batman",realName: "Bruce Wayne" },
 ];
 
 // Add a random function so the questions aren't always asked in the same order
@@ -58,7 +52,12 @@ const view = {
     hide(element){
         element.style.display = 'none';
     },
-   
+    // This method resets te input field to an empty field and gives it focus
+    resetForm(){
+        this.response.answer.value = '';
+        // Focus improves usability because the player only has to concentrate on answering one question
+        this.response.answer.focus();
+    },
     // This function uses the show and hide methods so the question, response, and results are visible and hides the start button
     // The render method is used to reset the HTML content in the result and info elements to an empty string
     // Also calls the new resetForm method
@@ -70,16 +69,13 @@ const view = {
         this.render(this.score,game.score);
         this.render(this.result,'');
         this.render(this.info,'');
+        this.resetForm();
     },
     // This method is called at the end of the game to hide any elements not required and make the start button visible again
     teardown(){
         this.hide(this.question);
         this.hide(this.response);
         this.show(this.start);
-    },
-    // Add a helper method to create the button HTML
-    buttons(array) {
-        return array.map(value => `<button>${value}</button>`).join('');
     }
 };
 // Store questions as objects inside an array
@@ -119,22 +115,15 @@ const game = {
         // Adding calls to the console make the code easier to debug
         console.log('ask() invoked');
         // Check the length of the this.questions array to see if there are questions left
-        // Change it from greater than 0 to greater than 2 so that three possible answers are given
-        if(this.questions.length > 2) {
+        if(this.questions.length > 0) {
             // Add cal to the shuffle method so questions are asked in a random order
             shuffle(this.questions);
             // If questions left, use pop() method to remove the last element in the array and assign it to this.question
             this.question = this.questions.pop();
-            // This array is created so that the answer options can be randomly presented
-            const options = [this.questions[0].realName, this.questions[1].realName, this.question.realName];
-            // And shuffled
-            shuffle(options);
             // The next two line of code stay the same from QuizNinja 7, but are placed inside the if statement
             const question = `What is ${this.question.name}'s real name?`;
             // the call to the render function replaces the prompt dialog
             view.render(view.question,question);
-            // The answer options need to be displayed
-            view.render(view.response, view.buttons(options));
         }
         // Stops asking questions if no questions left
         else {
@@ -145,13 +134,16 @@ const game = {
     check(event){
         // Adding calls to the console make the code easier to debug
         console.log('check(event) invoked');
+        // This next line prevents the form from being submitted
+        event.preventDefault();
         // Get the answer that was submitted by user
-        const response = event.target.textContent;
+        const response = view.response.answer.value;
         // This stays the same from last week
         const answer = this.question.realName;
         if(response === answer){
         // the call to the render function will replace the alert dialog
         view.render(view.result,'Correct!',{'class':'correct'});
+        alert('Correct!');
         this.score++;
         // the render function is inserted here to update the score as needed
         view.render(view.score,this.score);
@@ -159,7 +151,10 @@ const game = {
         else {
         // the call to the render function will replace the alert dialog        
         view.render(view.result,`Wrong! The correct answer was ${answer}`,{'class':'wrong'});
+        alert(`Wrong! The correct answer was ${answer}`);
         }
+        // Add a call to the resetForm method
+        view.resetForm();
         // Triggers the next question to be asked
         this.ask();
     },
@@ -177,5 +172,6 @@ const game = {
 
 // Update the call to the game.start function to be triggered by clicking the button
 view.start.addEventListener('click', () => game.start(quiz), false);
-// Add event listener that is triggered when the button is clicked
-view.response.addEventListener('click', (event) => game.check(event), false);
+// Add event listener that is triggered when the form is submitted
+view.response.addEventListener('submit', (event) => game.check(event), false);
+view.hide(view.response);

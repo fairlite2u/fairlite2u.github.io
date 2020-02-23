@@ -1,15 +1,26 @@
 // Add more questions!
-const quiz = [
-    { name: "Superman",realName: "Clark Kent"},
-    { name: "Wonder Woman",realName: "Diana Prince"},
-    { name: "Batman",realName: "Bruce Wayne"},
-    { name: "The Hulk",realName: "Bruce Banner"},
-    { name: "Spider-man",realName: "Peter Parker"},
-    { name: "Cyclops",realName: "Scott Summers"},
-    { name: "Star-Lord",realName: "Peter Quill"},
-    { name: "Black Widow", realName: "Natasha Romanoff"},
-    { name: "Scarlet Witch", realName: "Wanda Maximoff"}
-];
+// const quiz = [
+//     { name: "Superman",realName: "Clark Kent"},
+//     { name: "Wonder Woman",realName: "Diana Prince"},
+//     { name: "Batman",realName: "Bruce Wayne"},
+//     { name: "The Hulk",realName: "Bruce Banner"},
+//     { name: "Spider-man",realName: "Peter Parker"},
+//     { name: "Cyclops",realName: "Scott Summers"},
+//     { name: "Star-Lord",realName: "Peter Quill"},
+//     { name: "Black Widow", realName: "Natasha Romanoff"},
+//     { name: "Scarlet Witch", realName: "Wanda Maximoff"}
+// ];
+
+// Use Ajax to fetch questions from a server instead of having them as an object in our JS
+const url = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/questions.json';
+// Use Fetch API to get the JSON data
+fetch(url)
+// Returns data as a JS object
+.then(res => res.json())
+.then(quiz => {
+    view.start.addEventListener('click', () => game.start(quiz.questions), false);
+    view.response.addEventListener('click', (event) = game.check(event), false);
+});
 
 // Add a random function so the questions aren't always asked in the same order
 function random(a, b=1) {
@@ -175,7 +186,8 @@ const game = {
     }
 }
 
-// Update the call to the game.start function to be triggered by clicking the button
-view.start.addEventListener('click', () => game.start(quiz), false);
-// Add event listener that is triggered when the button is clicked
-view.response.addEventListener('click', (event) => game.check(event), false);
+// Move these to the JSON part at the top
+// // Update the call to the game.start function to be triggered by clicking the button
+// view.start.addEventListener('click', () => game.start(quiz), false);
+// // Add event listener that is triggered when the button is clicked
+// view.response.addEventListener('click', (event) => game.check(event), false);

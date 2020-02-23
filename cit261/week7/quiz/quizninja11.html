@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='description' content='A JavaScript Quiz Game'>
-    <title>Quiz Ninja - Chapter 12</title>
+    <title>Quiz Ninja - Chapter 11</title>
     <link rel='stylesheet' href='styles.css'>
 </head>
 
@@ -12,24 +12,27 @@
     <section class='dojo'>
         <div class='quiz-body'>
             <header>
+                <h1>Quiz Ninja!</h1>
+                <!-- Add this div to display a timer-->
+                <div id='timer'>Time:<strong>20</strong></div>
                 <!-- Add this div to display the score while the game is played-->
                 <div id='score'>Score: <strong>0</strong></div>
-                <h1>Quiz Ninja!</h1>
             </header>
             <!-- Add empty div elements to be used by the js and reduce alert dialogs-->
             <!-- The ID attributes will be used to input the js into the page-->
             <div id='question'></div>
-            <!-- Change form element to empty div element -->
-            <div id='response'>
-            <!-- The button that contain the answers for the user to click on will be placed inside here-->
-            </div>
+            <!-- Add form element for user to enter in answers instead of having the prompt dialogs -->
+            <form id='response'>
+                <input name='answer' type='text'>
+                <button type='submit'>Submit Answer</button>
+            </form>
             <div id='result'></div>
             <div id='info'></div>
             <!-- Add a button that can be clicked to start the game!-->
             <button id='start'>Click to Start</button>
         </div>
     </section>
-    <script src='main12.js'></script>
+    <script src='main11.js'></script>
 
 </body>
 

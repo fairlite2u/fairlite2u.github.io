@@ -79,9 +79,15 @@ function loadTasks() {
     tasks.forEach(
         (task) => {
             let tr = document.createElement('tr');
+            let tdCheck = document.createElement('input');
             let tdTodo = document.createElement('td');
             let tdDelete = document.createElement('td');
 
+            tdCheck.className='checkbox';
+
+
+
+            tdCheck.setAttribute("type", "checkbox");
             tdTodo.textContent = task.task;
             
             let aDelete = document.createElement('a');
@@ -91,6 +97,7 @@ function loadTasks() {
 
             tdDelete.appendChild(aDelete);
 
+            tr.appendChild(tdCheck);
             tr.appendChild(tdTodo);
             tr.appendChild(tdDelete);
 
