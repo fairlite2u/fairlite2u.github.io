@@ -1,0 +1,3 @@
+[submodule "path_to_submodule"] 
+  path = 'wdd330'
+  url = git://wdd330/
